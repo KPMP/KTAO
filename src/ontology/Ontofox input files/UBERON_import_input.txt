@@ -1,0 +1,94 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ktao/UBERON_import.owl
+
+[Source ontology]
+UBERON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UBERON_0002113 #kidney
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0005215 #kidney interstitium
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0004819 #kidney epithelium
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0006517 #kidney calyx
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0001232 #collecting duct of renal tubule
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0001140 #renal vein
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0001225 #cortex of kidney
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0009773 #renal tubule
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0003517 #kidney blood vessel
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0006544 #kidney vasculature
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0004200 #kidney pyramid
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0002015 #kidney capsule
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0003918 #kidney mesenchyme
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0004788 #kidney pelvis urothelium
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0001224 #renal pelvis
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0005006 #mucosa of renal pelvis
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0006171 #renal sinus
+includeAllChildren
+
+http://purl.obolibrary.org/obo/UBERON_0009913 #renal lobe
+http://purl.obolibrary.org/obo/UBERON_0001229 #renal corpuscle
+http://purl.obolibrary.org/obo/UBERON_0001293 #outer medulla of kidney
+http://purl.obolibrary.org/obo/UBERON_0009651 #nephron tubule basement membrane
+http://purl.obolibrary.org/obo/UBERON_0007132 #head kidney
+http://purl.obolibrary.org/obo/UBERON_0005095 #kidney rudiment
+http://purl.obolibrary.org/obo/UBERON_0004227 #kidney pelvis smooth muscle
+http://purl.obolibrary.org/obo/UBERON_0004202 #kidney outer medulla outer stripe
+http://purl.obolibrary.org/obo/UBERON_0012428 #proximal convoluted tubule brush border
+http://purl.obolibrary.org/obo/UBERON_0035368 #anterior surface of kidney
+http://purl.obolibrary.org/obo/UBERON_0008987 #renal parenchyma
+http://purl.obolibrary.org/obo/UBERON_0002120 #pronephros
+http://purl.obolibrary.org/obo/UBERON_0009883 #medullary ray
+http://purl.obolibrary.org/obo/UBERON_0004100 #renal collecting system
+http://purl.obolibrary.org/obo/UBERON_0003425 #renal lymph node
+http://purl.obolibrary.org/obo/UBERON_0001284 #renal column
+http://purl.obolibrary.org/obo/UBERON_0001228 #renal papilla
+http://purl.obolibrary.org/obo/UBERON_0000362 #renal medulla
+http://purl.obolibrary.org/obo/UBERON_0007687 #kidney field
+http://purl.obolibrary.org/obo/UBERON_0009917 #kidney corticomedullary boundary
+http://purl.obolibrary.org/obo/UBERON_0014388 #kidney collecting duct epithelium
+
+# http://purl.obolibrary.org/obo/RO_0002489 #existence starts with
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UBERON_0000105 #life cycle stage
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+
+http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+subClassOf  http://purl.obolibrary.org/obo/BFO_0000004 #independent entity
+
+[Source term retrieval setting]
+includeAllAxiomsRecursively
+
+[Source annotation URIs]
+includeAllAnnotationProperties
