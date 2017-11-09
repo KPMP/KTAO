@@ -1,0 +1,50 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ktao/CL_import.owl
+
+[Source ontology]
+CL
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CL_0000000 #cell
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+
+http://purl.obolibrary.org/obo/UBERON_0001062 #anotomical entity
+
+http://purl.obolibrary.org/obo/CL_1000497 #kidney cell
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CL_0000000 #cell type
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040
+
+http://purl.obolibrary.org/obo/UBERON_0001062 #anotomical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 
+
+http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 
+
+http://purl.obolibrary.org/obo/PR_000018263 
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 
+
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
+
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
+
+
+#http://purl.obolibrary.org/obo/PATO_0000001 #quality
+#http://purl.obolibrary.org/obo/NCBITaxon_1 #root
+#http://purl.obolibrary.org/obo/NCBITaxon_131567 #cellular organisms
+
+
