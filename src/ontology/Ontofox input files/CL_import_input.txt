@@ -29,7 +29,8 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000040
 http://purl.obolibrary.org/obo/GO_0008150 #biological process
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
 
-
+http://purl.obolibrary.org/obo/PATO_0001241
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #qulity
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -41,9 +42,8 @@ includeAllIntermediates
 includeAllAxiomsRecursively
 
 [Source annotation URIs to be excluded]
+http://purl.obolibrary.org/obo/PATO_0000001 #quality
 
-
-#http://purl.obolibrary.org/obo/PATO_0000001 #quality
 #http://purl.obolibrary.org/obo/NCBITaxon_1 #root
 #http://purl.obolibrary.org/obo/NCBITaxon_131567 #cellular organisms
 
