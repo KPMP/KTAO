@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1510230934858" name="http://purl.obolibrary.org/obo/clo/UBERON_import.owl" uri="UBERON_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1510230934858" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="CL_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1510230934858" name="http://purl.obolibrary.org/obo/ktao/OBI_import.owl" uri="OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511394879358" name="http://purl.obolibrary.org/obo/ktao.owl" uri="ktao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511394879358" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="CL_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511394879358" name="http://purl.obolibrary.org/obo/ktao/OBI_import.owl" uri="OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1511394879358" name="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl" uri="UBERON_import.owl"/>
     </group>
 </catalog>
