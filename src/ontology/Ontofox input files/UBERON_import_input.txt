@@ -88,7 +88,9 @@ http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
 subClassOf  http://purl.obolibrary.org/obo/BFO_0000004 #independent entity
 
 [Source term retrieval setting]
-includeAllAxiomsRecursively
+includeAllIntermediates
+
+#includeAllAxiomsRecursively
 
 [Source annotation URIs]
 includeAllAnnotationProperties

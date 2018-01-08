@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 
+
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
@@ -10,8 +11,9 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
+
 <rdf:RDF xmlns="&obo;kao.owl#"
-     xml:base="&obo;ktao.owl"
+     xml:base="&obo;kao.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -25,46 +27,16 @@
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:creator xml:lang="en">Sean Mooney</dc:creator>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:creator xml:lang="en">Sean Mooney</dc:creator>
+        <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
+        <owl:imports rdf:resource="&obo;ktao/HP_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/OBI_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/UBERON_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
     </owl:Ontology>
     
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-	 
-	 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-	 
-	 
-	<!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-	 
-	 
-	 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -74,29 +46,62 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-	 
-	 
-	 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    
 
-	 
-	 
-	 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-	 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36342 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_36342">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CP_0000027 -->
+
+    <rdf:Description rdf:about="&obo;CP_0000027">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005737"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CP_0000035 -->
+
+    <rdf:Description rdf:about="&obo;CP_0000035">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005737"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
+
+    <rdf:Description rdf:about="&obo;GO_0003674">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPATH_596 -->
+
+    <rdf:Description rdf:about="&obo;MPATH_596">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPATH_603 -->
+
+    <rdf:Description rdf:about="&obo;MPATH_603">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001062"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3262 -->
+
+    <rdf:Description rdf:about="&obo;NCIT_C3262">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

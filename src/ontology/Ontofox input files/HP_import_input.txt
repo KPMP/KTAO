@@ -1,0 +1,30 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ktao/HP_import.owl
+
+[Source ontology]
+HP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/HP_0000077 # Abnormality of the kidney
+includeAllChildren
+
+http://purl.obolibrary.org/obo/HP_0009726 #Renal neoplasm
+includeAllChildren
+
+http://purl.obolibrary.org/obo/HP_0012637 # Renal calcium wasting
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/UPHENO_0001001 #phenotype
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
+
+# http://purl.obolibrary.org/obo/HP_0000118 #Phenotypic abnormality
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
