@@ -85,12 +85,12 @@ http://purl.obolibrary.org/obo/UBERON_0000105 #life cycle stage
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 
 http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
-subClassOf  http://purl.obolibrary.org/obo/BFO_0000004 #independent entity
+subClassOf  http://purl.obolibrary.org/obo/BFO_0000040 #material entity
 
 [Source term retrieval setting]
 includeAllIntermediates
 
-#includeAllAxiomsRecursively
-
 [Source annotation URIs]
-includeAllAnnotationProperties
+includeAllAxiomsRecursively
+
+#includeAllAnnotationProperties
