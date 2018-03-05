@@ -31,10 +31,58 @@
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.05</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
+        <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/HP_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/OBI_import.owl"/>
+        <owl:imports rdf:resource="&obo;ktao/OGG_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/UBERON_import.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000001">
+        <rdfs:label xml:lang="en">differentially regulated in human disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000002 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000002">
+        <rdfs:label xml:lang="en">differentially regulated in CKD in cell</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000003 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000003">
+        <rdfs:label xml:lang="en">up-regulated in CKD in cell</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000004 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000004">
+        <rdfs:label xml:lang="en">down-regulated in CKD in cell</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
+    </owl:ObjectProperty>
     
 
 
@@ -101,6 +149,19 @@
 
     <rdf:Description rdf:about="&obo;NCIT_C3262">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000007490 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000007490">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
 </rdf:RDF>
 

@@ -1,0 +1,30 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ktao/DOID_import.owl
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/DOID_557 #kidney disease
+includeAllChildren
+
+http://purl.obolibrary.org/obo/DOID_263 # kidney cancer
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/DOID_4 #disease
+subClassOf http://purl.obolibrary.org/obo/BFO_0000016
+
+http://purl.obolibrary.org/obo/HP_0000001
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
