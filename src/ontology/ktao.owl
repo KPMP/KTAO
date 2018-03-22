@@ -153,9 +153,61 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_3000000301 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000000301">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000001285 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000001285">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000004868 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000004868">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGG_3000007490 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000007490">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000053405 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000053405">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>

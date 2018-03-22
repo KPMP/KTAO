@@ -2,13 +2,13 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="DOID_import.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao-merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="CL_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="DOID_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="http://purl.obolibrary.org/obo/ktao/HP_import.owl" uri="HP_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="http://purl.obolibrary.org/obo/ktao/OBI_import.owl" uri="OBI_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="http://purl.obolibrary.org/obo/ktao/OGG_import.owl" uri="OGG_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1520251522444" name="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl" uri="UBERON_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao-merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="CL_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="http://purl.obolibrary.org/obo/ktao/HP_import.owl" uri="HP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="http://purl.obolibrary.org/obo/ktao/OBI_import.owl" uri="OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="http://purl.obolibrary.org/obo/ktao/OGG_import.owl" uri="OGG_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1521707923180" name="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl" uri="UBERON_import.owl"/>
     </group>
 </catalog>
