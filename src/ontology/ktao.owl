@@ -28,7 +28,7 @@
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator xml:lang="en">Sean Mooney</dc:creator>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.16</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.18</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -169,6 +169,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_3000000059 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000000059">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGG_3000000301 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000000301">
@@ -208,6 +221,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_3000005159 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000005159">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGG_3000007490 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000007490">
@@ -215,6 +241,32 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000008516 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000008516">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000010581 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000010581">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
