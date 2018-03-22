@@ -1068,6 +1068,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;DOID_28"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;DOID_4"/>
@@ -1077,12 +1083,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001132"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An endocrine system disease that is located_in the parathyroid gland.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:11201</oboInOwl:id>
@@ -3934,7 +3934,6 @@ OMIM mapping by NeuroDevNet. [LS].</rdfs:comment>
 
     <owl:Class rdf:about="&obo;HP_0000001">
         <rdfs:label rdf:datatype="&xsd;string">phenotype</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <oboInOwl:id>HP:0000001</oboInOwl:id>
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
     </owl:Class>
@@ -3965,7 +3964,6 @@ OMIM mapping by NeuroDevNet. [LS].</rdfs:comment>
 
     <owl:Class rdf:about="&obo;HP_0000118">
         <rdfs:label rdf:datatype="&xsd;string">Phenotypic abnormality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;HP_0000001"/>
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
     </owl:Class>
     

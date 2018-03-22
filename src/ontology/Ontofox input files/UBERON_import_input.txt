@@ -56,6 +56,9 @@ includeAllChildren
 http://purl.obolibrary.org/obo/UBERON_0006171 #renal sinus
 includeAllChildren
 
+http://purl.obolibrary.org/obo/UBERON_0001285 #nephron
+includeAllChildren
+
 http://purl.obolibrary.org/obo/UBERON_0009913 #renal lobe
 http://purl.obolibrary.org/obo/UBERON_0001229 #renal corpuscle
 http://purl.obolibrary.org/obo/UBERON_0001293 #outer medulla of kidney
@@ -77,6 +80,10 @@ http://purl.obolibrary.org/obo/UBERON_0000362 #renal medulla
 http://purl.obolibrary.org/obo/UBERON_0007687 #kidney field
 http://purl.obolibrary.org/obo/UBERON_0009917 #kidney corticomedullary boundary
 http://purl.obolibrary.org/obo/UBERON_0014388 #kidney collecting duct epithelium
+
+http://purl.obolibrary.org/obo/UBERON_0000104 #life cycle
+http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000105 #life cycle stage
 
 # http://purl.obolibrary.org/obo/RO_0002489 #existence starts with
 
