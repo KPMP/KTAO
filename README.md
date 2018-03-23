@@ -1,5 +1,5 @@
 
-The Kidney Tissue Atlas Ontology (KTAO) is an ontology that integrates kidney-related cell types, cell states, locations, gene markers, disease, etc., and their relations. KTAO is developed to support the NIH-NIDDK-funed Kidney Precision Medicine Project (KPMP[http://kpmp.org]).
+The Kidney Tissue Atlas Ontology (KTAO) is an ontology that integrates kidney-related cell types, cell states, locations, gene markers, disease, etc., and their relations. KTAO is developed to support the NIH-NIDDK-funed Kidney Precision Medicine Project ([KPMP](http://kpmp.org)).
 
 [This GitHub website](https://github.com/KPMP/KTAO) is the home page of KTAO. 
 
