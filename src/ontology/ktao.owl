@@ -22,14 +22,15 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ktao.owl">
-        <dc:date xml:lang="en">2018-03-22</dc:date>
+        <dc:date xml:lang="en">2018-05-28</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
+        <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.19</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.20</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -55,7 +56,9 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000001 -->
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000001">
-        <rdfs:label xml:lang="en">differentially regulated in human disease</rdfs:label>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in human disease</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a specific human disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
     </owl:ObjectProperty>
     
 
@@ -63,7 +66,9 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000002 -->
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000002">
-        <rdfs:label xml:lang="en">differentially regulated in CKD in cell</rdfs:label>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in cell</rdfs:label>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a chronical kidney disease (CKD).</obo:IAO_0000117>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
     </owl:ObjectProperty>
     
@@ -72,7 +77,9 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000003 -->
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000003">
-        <rdfs:label xml:lang="en">up-regulated in CKD in cell</rdfs:label>
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in cell</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be up-regulated in a chronical kidney disease (CKD)</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
     </owl:ObjectProperty>
     
@@ -81,7 +88,9 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000004 -->
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000004">
-        <rdfs:label xml:lang="en">down-regulated in CKD in cell</rdfs:label>
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in cell</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be down-regulated in a chronical kidney disease (CKD)</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
     </owl:ObjectProperty>
     
