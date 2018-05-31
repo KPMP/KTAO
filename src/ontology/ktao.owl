@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ktao.owl">
-        <dc:date xml:lang="en">2018-05-28</dc:date>
+        <dc:date xml:lang="en">2018-05-31</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
@@ -30,7 +30,7 @@
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.20</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.21</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -152,6 +152,38 @@
     <rdf:Description rdf:about="&obo;HP_0000001">
         <rdfs:subClassOf rdf:resource="&obo;PATO_0000001"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000005 -->
+
+    <owl:Class rdf:about="&obo;KTAO_0000005">
+        <rdfs:label xml:lang="en">AKI patient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A human patient who has the disease of acute kidney injury (AKI).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000006 -->
+
+    <owl:Class rdf:about="&obo;KTAO_0000006">
+        <rdfs:label xml:lang="en">CKD patient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A human patient who has the disease of chronic kidney disease (CKD).</obo:IAO_0000115>
+    </owl:Class>
     
 
 

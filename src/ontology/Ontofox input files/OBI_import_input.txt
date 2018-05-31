@@ -23,6 +23,10 @@ http://purl.obolibrary.org/obo/OBI_0000643 #has grain
 
 http://purl.obolibrary.org/obo/BFO_0000019 #quality
 
+http://purl.obolibrary.org/obo/OBI_0000093 #patient role
+http://purl.obolibrary.org/obo/OBI_0000112 #specimen role
+
+
 [Top level source term URIs and target direct superclass URIs]
 
 http://purl.obolibrary.org/obo/BFO_0000001 #entity
