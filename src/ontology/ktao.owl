@@ -31,7 +31,7 @@
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.28</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.29</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -58,7 +58,7 @@
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000001">
         <rdfs:label xml:lang="en">susceptible to be differentially regulated in human disease</rdfs:label>
-        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a specific human disease</obo:IAO_0000115>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a material entity inside a human patient where the biological entity is susceptible to be differentially regulated in the material entity (e.g., cell or anatomic entity) of a human patient with a specific disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
     </owl:ObjectProperty>
     
@@ -69,7 +69,7 @@
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000002">
         <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in cell</rdfs:label>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
-        <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a chronical kidney disease (CKD).</obo:IAO_0000117>
+        <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a cell of a chronical kidney disease (CKD) patient.</obo:IAO_0000117>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
     </owl:ObjectProperty>
     
@@ -79,7 +79,7 @@
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000003">
         <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in cell</rdfs:label>
-        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be up-regulated in a chronical kidney disease (CKD)</obo:IAO_0000115>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be up-regulated in a cell of a chronical kidney disease (CKD) patient</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
     </owl:ObjectProperty>
@@ -90,9 +90,42 @@
 
     <owl:ObjectProperty rdf:about="&obo;KTAO_0000004">
         <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in cell</rdfs:label>
-        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be down-regulated in a chronical kidney disease (CKD)</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be down-regulated in a cell of a chronical kidney disease (CKD) patient</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000007 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000007">
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in AKI in cell</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a cell in an acute kidney injury (AKI) patient.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000008">
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in anatomic location</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be differentially regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000009 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000009">
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in anatomic location</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be up-regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000008"/>
     </owl:ObjectProperty>
     
 
@@ -212,6 +245,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_2060009606 -->
+
+    <rdf:Description rdf:about="&obo;OGG_2060009606">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGG_3000000059 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000000059">
@@ -303,6 +349,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_3000009390 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000009390">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_3010394"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGG_3000010581 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000010581">
@@ -310,6 +369,19 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000010786 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000010786">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004197"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>

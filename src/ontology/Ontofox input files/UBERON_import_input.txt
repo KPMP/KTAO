@@ -59,6 +59,9 @@ includeAllChildren
 http://purl.obolibrary.org/obo/UBERON_0001285 #nephron
 includeAllChildren
 
+http://purl.obolibrary.org/obo/UBERON_0006553 #renal duct
+includeAllChildren
+
 http://purl.obolibrary.org/obo/UBERON_0009913 #renal lobe
 http://purl.obolibrary.org/obo/UBERON_0001229 #renal corpuscle
 http://purl.obolibrary.org/obo/UBERON_0001293 #outer medulla of kidney
