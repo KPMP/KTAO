@@ -8,7 +8,12 @@ CL
 http://purl.obolibrary.org/obo/CL_0000000 #cell
 http://purl.obolibrary.org/obo/GO_0008150 #biological process
 
-http://purl.obolibrary.org/obo/UBERON_0001062 #anotomical entity
+http://purl.obolibrary.org/obo/CL_0000096 # mature neutrophil
+http://purl.obolibrary.org/obo/CL_0000236 # B lymphocyte
+http://purl.obolibrary.org/obo/CL_0000084 # T lymphocyte
+http://purl.obolibrary.org/obo/CL_0000623 # NK: natural killer cell.
+
+http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
 
 http://purl.obolibrary.org/obo/CL_1000497 #kidney cell
 includeAllChildren
