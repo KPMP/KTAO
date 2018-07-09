@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ktao.owl">
-        <dc:date xml:lang="en">2018-06-22</dc:date>
+        <dc:date xml:lang="en">2018-07-09</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:contributor>George Oliver</dc:contributor>
@@ -31,7 +31,7 @@
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.29</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.30</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -126,6 +126,72 @@
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be up-regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000008"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000010 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000010">
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in anatomic location</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be down-regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000008"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000011 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000011">
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in AKI in anatomic location</rdfs:label>
+        <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be differentially regulated in the anatomic location of an acute kidney injury (AKI) patient.</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000012 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000012">
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in AKI in cell</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be up-regulated in a cell of an acute kidney injury (AKI) patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000007"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000013 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000013">
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in AKI in cell</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be down-regulated in a cell of an acute kidney injury (AKI) patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000007"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000014 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000014">
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in AKI in anatomic location</rdfs:label>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be down-regulated in the anatomic location of an acute kidney injury (AKI) patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000015 -->
+
+    <owl:ObjectProperty rdf:about="&obo;KTAO_0000015">
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in AKI in anatomic location</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be down-regulated in the anatomic location of an acute kidney injury (AKI) patient.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000011"/>
     </owl:ObjectProperty>
     
 
