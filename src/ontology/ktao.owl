@@ -31,7 +31,7 @@
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.30</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.31</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -311,19 +311,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_2060009606 -->
-
-    <rdf:Description rdf:about="&obo;OGG_2060009606">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004196"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OGG_3000000059 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000000059">
@@ -389,6 +376,45 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGG_3000006524 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000006524">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000006649 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000006649">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000010"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000007412 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000007412">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_1000452"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGG_3000007490 -->
 
     <rdf:Description rdf:about="&obo;OGG_3000007490">
@@ -409,6 +435,19 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000009076 -->
+
+    <rdf:Description rdf:about="&obo;OGG_3000009076">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;KTAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_1000452"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
