@@ -11,7 +11,10 @@ includeAllChildren
 http://purl.obolibrary.org/obo/HP_0009726 #Renal neoplasm
 includeAllChildren
 
-http://purl.obolibrary.org/obo/HP_0012637 # Renal calcium wasting
+http://purl.obolibrary.org/obo/HP_0011280 #Abnormality of urine calcium concentration
+includeAllChildren
+
+http://purl.obolibrary.org/obo/HP_0001635 #Congestive heart failure
 
 [Top level source term URIs and target direct superclass URIs]
 
