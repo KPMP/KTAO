@@ -22,7 +22,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ktao.owl">
-        <dc:date xml:lang="en">2018-10-01</dc:date>
+        <dc:date xml:lang="en">2018-10-04</dc:date>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:contributor>George Oliver</dc:contributor>
@@ -33,7 +33,7 @@
         <dc:contributor xml:lang="en">Matthias Kretzler</dc:contributor>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.33</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
