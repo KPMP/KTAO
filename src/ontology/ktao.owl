@@ -33,7 +33,7 @@
         <dc:contributor xml:lang="en">Matthias Kretzler</dc:contributor>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.38</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
@@ -42,6 +42,7 @@
         <owl:imports rdf:resource="&obo;ktao/OBI_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/OGG_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/UBERON_import.owl"/>
+        <owl:imports rdf:resource="&obo;ktao/VO_import.owl"/>
     </owl:Ontology>
     
 

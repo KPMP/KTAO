@@ -625,7 +625,6 @@
 
     <owl:Class rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000001">
         <rdfs:label>Pharmaceutical Preparations</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <NDF-RT:Display_Name>Pharmaceutical Preparations</NDF-RT:Display_Name>
         <NDF-RT:RxNorm_CUI>3683</NDF-RT:RxNorm_CUI>
         <NDF-RT:NUI>N0000000001</NDF-RT:NUI>
@@ -8845,7 +8844,7 @@
 
     <owl:Class rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010574">
         <rdfs:label>Drug Products by VA Class</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
         <NDF-RT:UMLS_CUI>C2267083</NDF-RT:UMLS_CUI>
         <NDF-RT:NUI>N0000010574</NDF-RT:NUI>
         <NDF-RT:code>C281072</NDF-RT:code>
@@ -8860,7 +8859,7 @@
 
     <owl:Class rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010582">
         <rdfs:label>Drug Products by Generic Ingredient Combinations</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
         <NDF-RT:RxNorm_CUI>987399</NDF-RT:RxNorm_CUI>
         <NDF-RT:UMLS_CUI>C2267084</NDF-RT:UMLS_CUI>
         <NDF-RT:code>C288626</NDF-RT:code>
@@ -9483,32 +9482,14 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010586"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010226"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003288"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003288"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9525,7 +9506,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010226"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003288"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9557,12 +9556,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175703"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#induces"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003064"/>
             </owl:Restriction>
@@ -9575,14 +9568,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008953"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175703"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008953"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9808,8 +9807,80 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010601"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001598"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009361"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008294"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002540"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000911"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003307"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007207"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008867"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9821,43 +9892,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007207"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001598"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002730"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003307"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003223"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000355"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9875,43 +9910,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002540"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009361"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000911"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003169"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000355"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001057"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008867"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:FDA_UNII>451W47IQ8X</NDF-RT:FDA_UNII>
@@ -9938,8 +9937,14 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010596"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008478"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006699"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009957"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9950,8 +9955,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000652"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003524"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9968,32 +9973,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000654"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009957"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000652"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003524"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006699"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000652"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.416^173^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.416&lt;/VA_File&gt;&lt;VA_IEN&gt;173&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
@@ -10048,26 +10047,8 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010595"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001921"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000220"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10078,26 +10059,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006335"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001499"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008337"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000163"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001430"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10109,7 +10072,43 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001430"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001499"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006335"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000163"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008337"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:Level>Ingredient</NDF-RT:Level>
@@ -10137,37 +10136,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002260"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000689"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001750"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002526"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002768"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006996"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10179,7 +10148,37 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001750"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006996"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000875"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000689"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002768"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:FDA_UNII>1C6V77QF41</NDF-RT:FDA_UNII>
@@ -10206,26 +10205,20 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010585"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000178477"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006932"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001616"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10237,7 +10230,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009277"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008669"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10248,8 +10247,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008669"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10260,26 +10259,32 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002155"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000178477"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009275"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000066"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002155"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001616"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009277"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10290,14 +10295,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001434"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:UMLS_CUI>C0008273</NDF-RT:UMLS_CUI>
@@ -10324,6 +10323,48 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010586"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009773"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001586"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000228"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009399"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002467"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000004102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001635"/>
             </owl:Restriction>
@@ -10336,50 +10377,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009773"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002467"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009399"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000004102"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001586"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001270"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000228"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10420,50 +10419,14 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000146031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006545"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001746"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002916"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001577"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009168"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001590"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006512"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10475,13 +10438,49 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003118"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001746"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006512"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001590"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003118"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009168"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:Display_Name>CALCIUM CHLORIDE</NDF-RT:Display_Name>
@@ -10508,26 +10507,26 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010595"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000005746"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001057"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001616"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008669"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000431"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002155"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10539,49 +10538,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009275"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001616"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009279"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000005746"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010195"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000178477"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000431"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10593,19 +10574,37 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008669"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009277"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002155"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001434"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010195"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009275"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:RxNorm_Name>Metolazone</NDF-RT:RxNorm_Name>
@@ -10638,8 +10637,50 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008337"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001430"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007198"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001921"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001921"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000163"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10656,50 +10697,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000163"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000220"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001921"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001430"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001921"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008337"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:UMLS_CUI>C0024472</NDF-RT:UMLS_CUI>
@@ -10726,14 +10725,38 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000147825"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000683"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000122"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009826"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001430"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10750,50 +10773,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009941"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009826"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009808"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000122"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001748"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003118"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002390"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10804,14 +10785,32 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000117"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009808"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002390"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009941"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000683"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.416^1257^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.416&lt;/VA_File&gt;&lt;VA_IEN&gt;1257&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
@@ -10837,8 +10836,14 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010601"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006559"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10849,8 +10854,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10863,12 +10868,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000220"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006559"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:RxNorm_Name>Sodium Lactate</NDF-RT:RxNorm_Name>
@@ -10895,36 +10894,6 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010604"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000265"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001647"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001679"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006290"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009915"/>
             </owl:Restriction>
@@ -10937,8 +10906,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001647"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009252"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001679"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000265"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:Display_Name>VITAMIN K</NDF-RT:Display_Name>
@@ -10964,6 +10963,18 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000021229"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003288"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010226"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001000"/>
             </owl:Restriction>
@@ -10982,6 +10993,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000265"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000179656"/>
             </owl:Restriction>
@@ -10990,24 +11007,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003288"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010226"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000265"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11038,8 +11037,20 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010589"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001635"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009773"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009344"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11051,31 +11062,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009344"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002467"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009399"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001586"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001635"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11090,12 +11083,18 @@
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001586"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <NDF-RT:RxNorm_CUI>4850</NDF-RT:RxNorm_CUI>
         <NDF-RT:NUI>N0000147647</NDF-RT:NUI>
-        <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.416^2156^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.416&lt;/VA_File&gt;&lt;VA_IEN&gt;2156&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
         <NDF-RT:Display_Name>GLUCOSE</NDF-RT:Display_Name>
-        <NDF-RT:Level>Ingredient</NDF-RT:Level>
+        <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.416^2156^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.416&lt;/VA_File&gt;&lt;VA_IEN&gt;2156&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.6^2205^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.6&lt;/VA_File&gt;&lt;VA_IEN&gt;2205&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
+        <NDF-RT:Level>Ingredient</NDF-RT:Level>
         <NDF-RT:FDA_UNII>IY9XDZ35W2</NDF-RT:FDA_UNII>
         <NDF-RT:code>C15102</NDF-RT:code>
         <NDF-RT:VUID>4019541</NDF-RT:VUID>
@@ -11115,19 +11114,37 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000004248"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001610"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009921"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000683"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000004248"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009808"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009921"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11140,24 +11157,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009809"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001610"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009808"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.6^77^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.6&lt;/VA_File&gt;&lt;VA_IEN&gt;77&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
@@ -11185,7 +11184,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009808"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009941"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000683"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009826"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009809"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001748"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11197,37 +11220,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001748"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000117"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000122"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000600"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001430"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009941"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11238,14 +11231,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009809"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009826"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11256,20 +11243,32 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009808"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002390"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000683"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003118"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000600"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:code>C14012</NDF-RT:code>
@@ -11302,14 +11301,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000202"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006841"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006841"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:RxNorm_CUI>10167</NDF-RT:RxNorm_CUI>
@@ -11335,38 +11334,8 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008841"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001527"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008577"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11377,8 +11346,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001527"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003529"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008841"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007166"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000897"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.6^2700^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.6&lt;/VA_File&gt;&lt;VA_IEN&gt;2700&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
@@ -11405,8 +11404,20 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010602"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PK"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000026"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009386"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002540"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11417,8 +11428,50 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001749"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001750"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PK"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009386"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009387"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000178477"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009381"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PK"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11430,55 +11483,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009387"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PK"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000042"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001750"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009385"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008669"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000490"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001434"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009382"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009381"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11495,56 +11512,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000911"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000178477"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001862"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000490"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002540"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001749"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008669"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009382"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001862"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:Display_Name>TORSEMIDE</NDF-RT:Display_Name>
@@ -11571,8 +11570,20 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010602"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007302"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008344"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008998"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11589,20 +11600,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000943"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000007302"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009915"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11613,14 +11618,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000001384"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008998"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009915"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:RxNorm_Name>Tacrolimus</NDF-RT:RxNorm_Name>
@@ -11647,32 +11646,8 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000022024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#induces"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175703"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008953"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#induces"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003064"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175718"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11683,8 +11658,32 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#induces"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175718"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000175703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#induces"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000002059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008953"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:Display_Name>CISATRACURIUM BESYLATE</NDF-RT:Display_Name>
@@ -11710,8 +11709,8 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010584"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010279"/>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000004374"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11723,7 +11722,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008699"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008571"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000010279"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11735,13 +11740,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_PE"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008571"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000004374"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000008699"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:VUID>4021113</NDF-RT:VUID>
@@ -11769,6 +11768,42 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000145961"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009957"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006699"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000652"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000651"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003524"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000652"/>
             </owl:Restriction>
@@ -11781,56 +11816,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000135760"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000652"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_MoA"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000009957"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000651"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#"/>
+                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000135760"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_treat"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000653"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#has_Ingredient"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000006699"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#may_prevent"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000003524"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <NDF-RT:Level>VA Product</NDF-RT:Level>
@@ -12407,6 +12406,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047"/>
     
 
 
