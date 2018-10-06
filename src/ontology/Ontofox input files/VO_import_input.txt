@@ -1,0 +1,24 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ktao/VO_import.owl
+
+[Source ontology]
+VO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+http://purl.obolibrary.org/obo/VO_0000640 #tetanus vaccine
+http://purl.obolibrary.org/obo/VO_0010737 #Recombivax HB
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/OBI_0000047 #processed material
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
