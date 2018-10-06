@@ -387,8 +387,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
         <rdfs:label>has_related_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label>imported from</rdfs:label>
         <rdfs:label xml:lang="en">imported from</rdfs:label>
@@ -3892,12 +3892,6 @@ An adjuvant is a substance that helps and enhances the pharmacological effect of
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000165">
         <rdfs:label>bacterial vaccine</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0003355"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4023,12 +4017,6 @@ An adjuvant is a substance that helps and enhances the pharmacological effect of
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000496"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4036,6 +4024,12 @@ An adjuvant is a substance that helps and enhances the pharmacological effect of
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000496"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>preventive vaccine function is a vaccine function realized by the process of vaccination and leading to induction of an adaptive immune response to the antigens in a vaccine, which protects against a specific disorder.</obo:IAO_0000115>
@@ -4082,6 +4076,12 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000491"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -4100,12 +4100,6 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000585"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>YH, XZ</obo:IAO_0000117>
@@ -4171,6 +4165,12 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:label>therapeutic vaccine function</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000278"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000497"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -4188,12 +4188,6 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000497"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
@@ -4267,12 +4261,6 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -4280,6 +4268,12 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0001479"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaccine production</obo:IAO_0000118>
@@ -4304,14 +4298,14 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0003355"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000211"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000211"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0003355"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vaccine that targets against a viral disease.</obo:IAO_0000115>
@@ -4423,6 +4417,7 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000609"/>
         <obo:IAO_0000115>A viral vaccine that protects against infection with Hepatitis B virus.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hepatitis_B_vaccine</obo:IAO_0000119>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <rdfs:seeAlso>MeSH: D017325</rdfs:seeAlso>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
@@ -4617,15 +4612,51 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VO_0010737 -->
+    <!-- http://purl.obolibrary.org/obo/VO_0003150 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0010737">
-        <rdfs:label>Recombivax HB</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0003150">
+        <rdfs:label xml:lang="en">Hepatitis B surface antigen vaccine</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000644"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000940"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000304"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/VO_0000896"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0001243"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000812"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0001187"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16842"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000884"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4640,16 +4671,41 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000913"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hepatitis_B_vaccine</obo:IAO_0000119>
+        <obo:IAO_0000115>A Hepatitis B virus vaccine that uses recombinant Hepatitis B surface antigen as the antigen</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0010737 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0010737">
+        <rdfs:label>Recombivax HB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0003150"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000304"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/VO_0000896"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0000531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000913"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000864"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000884"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000940"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16842"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4660,8 +4716,8 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000940"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0001243"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4673,7 +4729,13 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16842"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000884"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000304"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/VO_0000896"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">todo: Recombinant protein</obo:IAO_0000232>
@@ -4875,12 +4937,12 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vo.owl">
         <dc:creator>Alexander D. Diehl</dc:creator>
-        <dc:subject xml:lang="en">An ontology in the domain of vaccine and vaccination</dc:subject>
         <dc:contributor>Ryan R. Brinkman</dc:contributor>
         <dc:creator>Rebecca Racz</dc:creator>
         <dc:creator>Thomas Todd</dc:creator>
         <dc:contributor>Chris mungall</dc:contributor>
         <dc:creator>Alan Ruttenburg</dc:creator>
+        <dc:subject xml:lang="en">An ontology in the domain of vaccine and vaccination</dc:subject>
         <dc:creator>Omar Tibi</dc:creator>
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>Jason Hu</dc:creator>
@@ -4893,14 +4955,15 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <dc:contributor>Erica Marcos</dc:contributor>
         <dc:contributor>Ningxian Fan</dc:contributor>
         <dc:creator>Lindsay Cowell</dc:creator>
-        <dc:date xml:lang="en">April 1, 2018</dc:date>
         <dc:creator xml:lang="en">Ningxian Fan</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:date xml:lang="en">October 6, 2018</dc:date>
+        <dc:contributor xml:lang="en">Randi Vita</dc:contributor>
         <dc:creator xml:lang="en">Ronak Sutariya</dc:creator>
         <dc:contributor xml:lang="en">Shunzhou Deng</dc:contributor>
         <dc:description xml:lang="en">The Vaccine Ontology (VO) is a biomedical ontology in the domain of vaccine and vaccination. VO aims to standardize vaccine annotation, integrate various vaccine data, and support computer-assisted reasoning.  VO supports basic vaccine R&amp;D and clincal vaccine usage. VO is initiated and primarily developed by Dr. Yongqun &quot;Oliver&quot; He at the University of Michigan Medical School. VO is being developed as a community-based ontology with support and collaborations from the vaccine and bio-ontology communities.</dc:description>
         <dc:title xml:lang="en">Vaccine Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release; 1.0.799</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release; 1.0.803</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator xml:lang="en">Yu Lin (YL)</dc:creator>
         <dc:creator xml:lang="en">Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
