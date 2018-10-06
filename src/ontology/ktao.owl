@@ -22,9 +22,18 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ktao.owl">
-        <dc:contributor>George Oliver</dc:contributor>
-        <dc:date xml:lang="en">2018-10-06</dc:date>
+        <dc:contributor>Ravi Iyengar</dc:contributor>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
+        <dc:contributor>John F. Bertram</dc:contributor>
+        <dc:contributor>Laura Mariani</dc:contributor>
+        <dc:contributor>Chrysta Lienczewski</dc:contributor>
+        <dc:contributor>Evren Azeloglu</dc:contributor>
+        <dc:contributor>The KPMP Consortium</dc:contributor>
+        <dc:contributor>Jonathan Himmelfarb</dc:contributor>
+        <dc:contributor>Deborah Hoshizaki</dc:contributor>
+        <dc:contributor>George Oliver</dc:contributor>
+        <dc:contributor>Ulysses Balis</dc:contributor>
+        <dc:date xml:lang="en">2018-10-06</dc:date>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
@@ -33,7 +42,7 @@
         <dc:contributor xml:lang="en">Matthias Kretzler</dc:contributor>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.40</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.41</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
