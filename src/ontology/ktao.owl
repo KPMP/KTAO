@@ -37,13 +37,13 @@
         <dc:contributor>George Oliver</dc:contributor>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:contributor>Ulysses Balis</dc:contributor>
-        <dc:date xml:lang="en">2018-10-06</dc:date>
+        <dc:date xml:lang="en">2018-12-20</dc:date>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:contributor xml:lang="en">Matthias Kretzler</dc:contributor>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.42</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.48</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="&obo;opmi.owl"/>
         <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
