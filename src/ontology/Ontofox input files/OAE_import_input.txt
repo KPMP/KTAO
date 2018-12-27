@@ -1,0 +1,25 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ktao/OAE_import.owl
+
+[Source ontology]
+OAE
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OAE_0000001 #adverse event
+http://purl.obolibrary.org/obo/OAE_0002659  # Flank pain 
+http://purl.obolibrary.org/obo/OAE_0000619  # Hematuria
+http://purl.obolibrary.org/obo/OAE_0004430  # Arteriovenous fistulae
+http://purl.obolibrary.org/obo/OAE_0001410  # Soft tissue infection
+http://purl.obolibrary.org/obo/OAE_0000632  # Death 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OAE_0000001 #adverse event
+subClassOf http://purl.obolibrary.org/obo/OGMS_0000061 
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

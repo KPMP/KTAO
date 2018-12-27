@@ -26,6 +26,5 @@ includeAllIntermediates
 [Branch extractions from source term URIs and target direct superclass URIs]
 
 [Source annotation URIs]
-#includeAllAxiomsRecursively
-includeAllAnnotationProperties
-
+#includeAllAnnotationProperties
+includeAllAxiomsRecursively
