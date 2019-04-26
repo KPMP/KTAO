@@ -22,4 +22,4 @@ Note that the source ontology is an OWL file.
 
 # Publication
 
-* He Y, Steck B, Ong E, Mariani L, Lienczewski C, Balis U, Kretzler M, Himmelfarb J, Bertram JF, Azeloglu E, Iyengar R, Hoshizaki D, Mooney SD, for the KPMP Consortium. KTAO: A kidney tissue atlas ontology to support community-based kidney knowledge base development and data integration. International Conference on Biomedical Ontology 2018 (ICBO-2018), August 7-10, 2018, Corvallis, Oregon, USA. Full length paper. Pages 1-6.
+* He Y, Steck B, Ong E, Mariani L, Lienczewski C, Balis U, Kretzler M, Himmelfarb J, Bertram JF, Azeloglu E, Iyengar R, Hoshizaki D, Mooney SD, for the KPMP Consortium. KTAO: A kidney tissue atlas ontology to support community-based kidney knowledge base development and data integration. International Conference on Biomedical Ontology 2018 (ICBO-2018), August 7-10, 2018, Corvallis, Oregon, USA. Full length paper. Pages 1-6. URL: http://ceur-ws.org/Vol-2285/ICBO_2018_paper_28.pdf 
