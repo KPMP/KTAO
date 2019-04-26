@@ -1,60 +1,61 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;kao.owl#"
-     xml:base="&obo;kao.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/kao.owl#"
+     xml:base="http://purl.obolibrary.org/obo/kao.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.obolibrary.org/obo/core#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="&obo;ktao.owl">
-        <dc:contributor>Ravi Iyengar</dc:contributor>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:rdfs1="rdfs:"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:NDF-RT="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#"
+     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOWL="http://www.geneontology.org/formats/oboInOWL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ktao.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/CL_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/DOID_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/HP_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/NDFRT_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OAE_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OGG_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/VO_import.owl"/>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
-        <dc:contributor>John F. Bertram</dc:contributor>
-        <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
-        <dc:contributor>Laura Mariani</dc:contributor>
         <dc:contributor>Chrysta Lienczewski</dc:contributor>
-        <dc:contributor>Evren Azeloglu</dc:contributor>
-        <dc:contributor>The KPMP Consortium</dc:contributor>
-        <dc:contributor>Jennifer Schaub</dc:contributor>
-        <dc:contributor>Jonathan Himmelfarb</dc:contributor>
-        <dc:date xml:lang="en">2018-12-27</dc:date>
         <dc:contributor>Deborah Hoshizaki</dc:contributor>
-        <dc:creator xml:lang="en">Edison Ong</dc:creator>
+        <dc:contributor>Evren Azeloglu</dc:contributor>
         <dc:contributor>George Oliver</dc:contributor>
-        <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
-        <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <dc:creator xml:lang="en">Ling Wan</dc:creator>
+        <dc:contributor>Jennifer Schaub</dc:contributor>
+        <dc:contributor>John F. Bertram</dc:contributor>
+        <dc:contributor>John O&apos;Toole</dc:contributor>
+        <dc:contributor>Jonathan Himmelfarb</dc:contributor>
+        <dc:contributor>Laura Mariani</dc:contributor>
         <dc:contributor xml:lang="en">Matthias Kretzler</dc:contributor>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:contributor>Ravi Iyengar</dc:contributor>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
+        <dc:contributor>The KPMP Consortium</dc:contributor>
         <dc:contributor>Ulysses Balis</dc:contributor>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.48</owl:versionInfo>
+        <dc:creator xml:lang="en">Edison Ong</dc:creator>
+        <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <owl:imports rdf:resource="&obo;opmi.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/CL_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/DOID_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/HP_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/NDFRT_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/OAE_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/OBI_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/OGG_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/UBERON_import.owl"/>
-        <owl:imports rdf:resource="&obo;ktao/VO_import.owl"/>
+        <dc:date xml:lang="en">2019-4-26</dc:date>
+        <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
+        <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.48</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -72,142 +73,142 @@
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000001 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000001">
-        <rdfs:label xml:lang="en">susceptible to be differentially regulated in human disease</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000001">
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a material entity inside a human patient where the biological entity is susceptible to be differentially regulated in the material entity (e.g., cell or anatomic entity) of a human patient with a specific disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in human disease</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000002 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000002">
-        <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in cell</rdfs:label>
-        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000001"/>
         <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a cell of a chronical kidney disease (CKD) patient.</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in cell</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000003 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000003">
-        <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in cell</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000002"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be up-regulated in a cell of a chronical kidney disease (CKD) patient</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in cell</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000004 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000004">
-        <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in cell</rdfs:label>
-        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000004">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000002"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be down-regulated in a cell of a chronical kidney disease (CKD) patient</obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000002"/>
+        <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in cell</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000007 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000007">
-        <rdfs:label xml:lang="en">susceptible to be differentially regulated in AKI in cell</rdfs:label>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000007">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000001"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be differentially regulated in a cell in an acute kidney injury (AKI) patient.</obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in AKI in cell</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000008 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000008">
-        <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in anatomic location</rdfs:label>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000008">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000001"/>
         <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be differentially regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in CKD in anatomic location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000009 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000009">
-        <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in anatomic location</rdfs:label>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000009">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000008"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be up-regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000008"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in CKD in anatomic location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000010 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000010">
-        <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in anatomic location</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000008"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be down-regulated in the anatomic location of a chronical kidney disease (CKD) patient.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000008"/>
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in CKD in anatomic location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000011 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000011">
-        <rdfs:label xml:lang="en">susceptible to be differentially regulated in AKI in anatomic location</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000001"/>
         <obo:IAO_0000117>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be differentially regulated in the anatomic location of an acute kidney injury (AKI) patient.</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000001"/>
+        <rdfs:label xml:lang="en">susceptible to be differentially regulated in AKI in anatomic location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000012 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000012">
-        <rdfs:label xml:lang="en">susceptible to be up-regulated in AKI in cell</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000007"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be up-regulated in a cell of an acute kidney injury (AKI) patient</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000007"/>
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in AKI in cell</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000013 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000013">
-        <rdfs:label xml:lang="en">susceptible to be down-regulated in AKI in cell</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000013">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000007"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and a cell where the entity is susceptible to be down-regulated in a cell of an acute kidney injury (AKI) patient</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Edison Ong</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000007"/>
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in AKI in cell</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000014 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000014">
-        <rdfs:label xml:lang="en">susceptible to be down-regulated in AKI in anatomic location</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000014">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000011"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be down-regulated in the anatomic location of an acute kidney injury (AKI) patient.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000011"/>
+        <rdfs:label xml:lang="en">susceptible to be down-regulated in AKI in anatomic location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000015 -->
 
-    <owl:ObjectProperty rdf:about="&obo;KTAO_0000015">
-        <rdfs:label xml:lang="en">susceptible to be up-regulated in AKI in anatomic location</rdfs:label>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000011"/>
         <obo:IAO_0000115>A shortcut object property that represents a relation between a biological entity and an anatomic location  where the entity is susceptible to be down-regulated in the anatomic location of an acute kidney injury (AKI) patient.</obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo;KTAO_0000011"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">susceptible to be up-regulated in AKI in anatomic location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -226,122 +227,130 @@
     <!-- http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000004 -->
 
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000004">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CARO_0010000 -->
 
-    <rdf:Description rdf:about="&obo;CARO_0010000">
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000061"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_36342 -->
 
-    <rdf:Description rdf:about="&obo;CHEBI_36342">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CP_0000027 -->
 
-    <rdf:Description rdf:about="&obo;CP_0000027">
-        <rdfs:subClassOf rdf:resource="&obo;GO_0005737"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CP_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CP_0000035 -->
 
-    <rdf:Description rdf:about="&obo;CP_0000035">
-        <rdfs:subClassOf rdf:resource="&obo;GO_0005737"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CP_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GOCHE_50906 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GOCHE_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
 
-    <rdf:Description rdf:about="&obo;GO_0003674">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/HP_0000001 -->
 
-    <rdf:Description rdf:about="&obo;HP_0000001">
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0000001"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000005 -->
 
-    <owl:Class rdf:about="&obo;KTAO_0000005">
-        <rdfs:label xml:lang="en">AKI patient</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000093"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A human patient who has the disease of acute kidney injury (AKI).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">AKI patient</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/KTAO_0000006 -->
 
-    <owl:Class rdf:about="&obo;KTAO_0000006">
-        <rdfs:label xml:lang="en">CKD patient</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000093"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A human patient who has the disease of chronic kidney disease (CKD).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CKD patient</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPATH_596 -->
 
-    <rdf:Description rdf:about="&obo;MPATH_596">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPATH_603 -->
 
-    <rdf:Description rdf:about="&obo;MPATH_603">
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001062"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C3262 -->
 
-    <rdf:Description rdf:about="&obo;NCIT_C3262">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C3262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000000059 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000000059">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000000059">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000650"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -350,11 +359,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000000301 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000000301">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000000301">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -363,11 +372,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000001285 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000001285">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000001285">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -376,11 +385,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000004868 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000004868">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000004868">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -389,11 +398,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000005159 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000005159">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000005159">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000650"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -402,11 +411,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000006524 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000006524">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000006524">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004196"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -415,11 +424,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000006649 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000006649">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000006649">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000010"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004134"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004134"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -428,11 +437,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000007412 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000007412">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000007412">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000002"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_1000452"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000452"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -441,11 +450,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000007490 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000007490">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000007490">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -454,11 +463,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000008516 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000008516">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000008516">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000650"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -467,11 +476,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000009076 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000009076">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000009076">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000002"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_1000452"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000452"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -480,11 +489,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000009390 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000009390">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000009390">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_3010394"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_3010394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -493,11 +502,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000010581 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000010581">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000010581">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000650"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000650"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -506,11 +515,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000010786 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000010786">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000010786">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000009"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004197"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000009"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004197"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -519,11 +528,11 @@
 
     <!-- http://purl.obolibrary.org/obo/OGG_3000053405 -->
 
-    <rdf:Description rdf:about="&obo;OGG_3000053405">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000053405">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;KTAO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;CL_0000653"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -532,20 +541,20 @@
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000104 -->
 
-    <rdf:Description rdf:about="&obo;UBERON_0000104">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UPHENO_0001001 -->
 
-    <rdf:Description rdf:about="&obo;UPHENO_0001001">
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0000001"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
