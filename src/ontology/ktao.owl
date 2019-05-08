@@ -50,7 +50,7 @@
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2019-4-26</dc:date>
+        <dc:date xml:lang="en">2019-5-8</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
@@ -453,7 +453,7 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000007490">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000003"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000002"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
