@@ -102,6 +102,9 @@ http://purl.obolibrary.org/obo/UBERON_0002325 # epithelium of urethra
 http://purl.obolibrary.org/obo/UBERON_0000105 #life cycle stage
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 
+http://purl.obolibrary.org/obo/UBERON_0000000 #processual entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000003 #occurrent
+
 http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
 subClassOf  http://purl.obolibrary.org/obo/BFO_0000040 #material entity
 
