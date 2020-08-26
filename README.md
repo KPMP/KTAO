@@ -20,6 +20,8 @@ Note that the source ontology is an OWL file.
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/KTAO](http://www.ontobee.org/ontology/KTAO)
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/KTAO](https://bioportal.bioontology.org/ontologies/KTAO)
 
-# Publication
+# Publications
+
+* Ong E, Wang LL, Schaub J, O'Toole JF, Steck B, Rosenberg AZ, Dowd F, Hansen J, Barisoni L, Jain S, de Boer IH, Valerius MT, Waikar SS, Park C, Crawford DC, Alexandrov T, Anderton CR, Stoeckert C, Weng C, Diehl AD, Mungall CJ, Haendel M, Robinson PN, Himmelfarb J, Iyengar R, Kretzler M, Mooney S, and He Y, for the Kidney Precision Medicine Project. Modeling Kidney Disease Using Ontology: Perspectives from the KPMP. Nature Review Nephrology. In press. 
 
 * He Y, Steck B, Ong E, Mariani L, Lienczewski C, Balis U, Kretzler M, Himmelfarb J, Bertram JF, Azeloglu E, Iyengar R, Hoshizaki D, Mooney SD, for the KPMP Consortium. KTAO: A kidney tissue atlas ontology to support community-based kidney knowledge base development and data integration. International Conference on Biomedical Ontology 2018 (ICBO-2018), August 7-10, 2018, Corvallis, Oregon, USA. Full length paper. Pages 1-6. URL: http://ceur-ws.org/Vol-2285/ICBO_2018_paper_28.pdf . 
