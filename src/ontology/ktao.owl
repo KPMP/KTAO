@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.obolibrary.org/obo/core#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -26,7 +27,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/CL_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/DOID_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/HP_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/NDFRT_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OAE_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OBI_import.owl"/>
@@ -44,20 +44,20 @@
         <dc:contributor>Jonathan Himmelfarb</dc:contributor>
         <dc:contributor>Laura Mariani</dc:contributor>
         <dc:contributor xml:lang="en">Matthias Kretzler</dc:contributor>
+        <dc:contributor xml:lang="en">Michael Todd Valerius</dc:contributor>
         <dc:contributor>Ravi Iyengar</dc:contributor>
         <dc:contributor xml:lang="en">Sean Mooney</dc:contributor>
-        <dc:contributor xml:lang="en">Michael Todd Valerius</dc:contributor>
         <dc:contributor>The KPMP Consortium</dc:contributor>
         <dc:contributor>Ulysses Balis</dc:contributor>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2020-2-3</dc:date>
+        <dc:date xml:lang="en">2020-8-26</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.57</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.61</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -250,27 +250,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CP_0000027 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CP_0000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CP_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CP_0000035 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CP_0000035">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CP_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GOCHE_50906 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GOCHE_50906">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GOCHE_50906">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -284,9 +292,9 @@
 
     <!-- http://purl.obolibrary.org/obo/HP_0000001 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HP_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -324,25 +332,25 @@
 
     <!-- http://purl.obolibrary.org/obo/MPATH_596 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_596">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPATH_596">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPATH_603 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_603">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPATH_603">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C3262 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C3262">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -551,9 +559,9 @@
 
     <!-- http://purl.obolibrary.org/obo/UPHENO_0001001 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-    </rdf:Description>
+    </owl:Class>
 </rdf:RDF>
 
 
