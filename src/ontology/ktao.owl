@@ -38,7 +38,6 @@
         <dc:contributor>Deborah Hoshizaki</dc:contributor>
         <dc:contributor>Evren Azeloglu</dc:contributor>
         <dc:contributor>George Oliver</dc:contributor>
-        <dc:contributor>Jennifer Schaub</dc:contributor>
         <dc:contributor>John F. Bertram</dc:contributor>
         <dc:contributor>John O&apos;Toole</dc:contributor>
         <dc:contributor>Jonathan Himmelfarb</dc:contributor>
@@ -50,6 +49,7 @@
         <dc:contributor>The KPMP Consortium</dc:contributor>
         <dc:contributor>Ulysses Balis</dc:contributor>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
+        <dc:creator>Jennifer Schaub</dc:creator>
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <dc:date xml:lang="en">2020-8-26</dc:date>
@@ -57,7 +57,7 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.61</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.63</owl:versionInfo>
     </owl:Ontology>
     
 
