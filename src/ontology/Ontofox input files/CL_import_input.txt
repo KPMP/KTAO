@@ -18,6 +18,35 @@ http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
 http://purl.obolibrary.org/obo/CL_1000497 #kidney cell
 includeAllChildren
 
+# kidney  related cell types, by Yingtong Liu and Oliver He on 2/28/2021
+
+http://purl.obolibrary.org/obo/CL_0000057
+http://purl.obolibrary.org/obo/CL_0000084
+http://purl.obolibrary.org/obo/CL_0000097
+http://purl.obolibrary.org/obo/CL_0000115 
+http://purl.obolibrary.org/obo/CL_0000186 
+http://purl.obolibrary.org/obo/CL_0000236
+http://purl.obolibrary.org/obo/CL_0000359
+http://purl.obolibrary.org/obo/CL_0000451
+http://purl.obolibrary.org/obo/CL_0000451
+http://purl.obolibrary.org/obo/CL_0000576
+http://purl.obolibrary.org/obo/CL_0000576
+http://purl.obolibrary.org/obo/CL_0000623
+http://purl.obolibrary.org/obo/CL_0000650
+http://purl.obolibrary.org/obo/CL_0000653 
+http://purl.obolibrary.org/obo/CL_0000775
+http://purl.obolibrary.org/obo/CL_0000786 
+http://purl.obolibrary.org/obo/CL_0000814
+http://purl.obolibrary.org/obo/CL_0002306
+http://purl.obolibrary.org/obo/CL_0002573 
+http://purl.obolibrary.org/obo/CL_0005010 
+http://purl.obolibrary.org/obo/CL_1000452
+http://purl.obolibrary.org/obo/CL_1001005 
+http://purl.obolibrary.org/obo/CL_1001225 
+http://purl.obolibrary.org/obo/CL_1001431
+http://purl.obolibrary.org/obo/CL_1001432
+
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CL_0000000 #cell type
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040
