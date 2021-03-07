@@ -24,6 +24,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ktao.owl">
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/22yg3dcd.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001clogg.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001googg.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001oggcl.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001ogggo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/CL_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/DOID_import.owl"/>
