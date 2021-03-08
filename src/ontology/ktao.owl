@@ -24,9 +24,14 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ktao.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001clogg.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001googg.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001oggcl.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_0000001ogggo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/CL_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/DOID_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/GO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/NDFRT_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OAE_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OBI_import.owl"/>
@@ -53,12 +58,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2021-2-28</dc:date>
+        <dc:date xml:lang="en">2021-03-07</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.67</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.70</owl:versionInfo>
     </owl:Ontology>
     
 
