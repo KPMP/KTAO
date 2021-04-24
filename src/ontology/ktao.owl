@@ -58,12 +58,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2021-03-07</dc:date>
+        <dc:date xml:lang="en">2021-04-24</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.70</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.73</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -241,6 +241,96 @@
         <obo:IAO_0000115>An object property that represents a relation between a celltype and a gene where the cell has the gene as its gene marker</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
         <rdfs:label xml:lang="en">cell has gene marker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000018">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <rdfs:comment>An object property that represents a relation between a disease and a biomarker where the disease has the biomarker.</rdfs:comment>
+        <rdfs:label xml:lang="en">disease has biomarker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000019">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000018"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000023"/>
+        <obo:IAO_0000115>An object property that represents a relation between a disease and a gene where the disease has the gene as a biomarker.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">disease has gene biomarker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000020 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000020">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000019"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+        <obo:IAO_0000115>An object property that represents a relation between a disease and a protein where the disease has the protein as a biomarker.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">disease has protein biomarker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000021 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000021">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000019"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000025"/>
+        <obo:IAO_0000117>An object property that represents a relation between a disease and a mRNA where the disease has the mRNA as a biomarker.</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">disease has mRNA biomarker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000022 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000022">
+        <obo:IAO_0000115>An object property that represents a relation between a biomarker and a disease where the biomarker serves as a biomarker role for the disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">biomarker of disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000023 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000023">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
+        <obo:IAO_0000115>An object property that represents a relation between a gene and a disease where the gene is a biomarkder of the disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">gene biomarker of disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000024">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000023"/>
+        <obo:IAO_0000115>An object property that represents a relation between a protein and a disease where the protein is a biomarkder of the disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">protein biomarker of disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000025">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000023"/>
+        <obo:IAO_0000115>An object property that represents a relation between a mRNA of a gene and a disease where the mRNA expression of the gene is a biomarkder of the disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">mRNA biomarker of disease</rdfs:label>
     </owl:ObjectProperty>
     
 
