@@ -37,6 +37,38 @@ http://purl.obolibrary.org/obo/GO_0006811
 http://purl.obolibrary.org/obo/GO_1902476
 http://purl.obolibrary.org/obo/GO_0015698
 
+#add CL and MF 
+http://purl.obolibrary.org/obo/GO_0070062
+http://purl.obolibrary.org/obo/GO_0005615
+http://purl.obolibrary.org/obo/GO_0005886
+http://purl.obolibrary.org/obo/GO_0005576
+http://purl.obolibrary.org/obo/GO_0031012
+http://purl.obolibrary.org/obo/GO_0042803
+http://purl.obolibrary.org/obo/GO_0005887
+http://purl.obolibrary.org/obo/GO_0016324
+http://purl.obolibrary.org/obo/GO_0016021
+http://purl.obolibrary.org/obo/GO_0016323
+http://purl.obolibrary.org/obo/GO_0005215
+http://purl.obolibrary.org/obo/GO_0031526
+http://purl.obolibrary.org/obo/GO_0015254
+http://purl.obolibrary.org/obo/GO_0015250
+http://purl.obolibrary.org/obo/GO_0045177
+http://purl.obolibrary.org/obo/GO_0005372
+http://purl.obolibrary.org/obo/GO_0015204
+http://purl.obolibrary.org/obo/GO_0043202
+http://purl.obolibrary.org/obo/GO_0042105
+http://purl.obolibrary.org/obo/GO_0045121
+http://purl.obolibrary.org/obo/GO_0009897
+http://purl.obolibrary.org/obo/GO_0009986
+http://purl.obolibrary.org/obo/GO_0005578
+http://purl.obolibrary.org/obo/GO_0004872
+http://purl.obolibrary.org/obo/GO_0004714
+http://purl.obolibrary.org/obo/GO_0050839
+http://purl.obolibrary.org/obo/GO_0036057
+http://purl.obolibrary.org/obo/GO_0015301
+http://purl.obolibrary.org/obo/GO_0042379
+http://purl.obolibrary.org/obo/GO_0005452
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/GO_0003674 #molecular function
 
