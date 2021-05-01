@@ -69,6 +69,49 @@ http://purl.obolibrary.org/obo/GO_0015301
 http://purl.obolibrary.org/obo/GO_0042379
 http://purl.obolibrary.org/obo/GO_0005452
 
+#chronic kidney disease gene marker enriched GO terms, Yingtong added total 38
+
+http://purl.obolibrary.org/obo/GO_0005615
+http://purl.obolibrary.org/obo/GO_0005576
+http://purl.obolibrary.org/obo/GO_0070062
+http://purl.obolibrary.org/obo/GO_0045893
+http://purl.obolibrary.org/obo/GO_0005515
+http://purl.obolibrary.org/obo/GO_0001525
+http://purl.obolibrary.org/obo/GO_0042493
+http://purl.obolibrary.org/obo/GO_0031093
+http://purl.obolibrary.org/obo/GO_0043234
+http://purl.obolibrary.org/obo/GO_0032355
+http://purl.obolibrary.org/obo/GO_0009986
+http://purl.obolibrary.org/obo/GO_0009615
+http://purl.obolibrary.org/obo/GO_0048469
+http://purl.obolibrary.org/obo/GO_0071347
+http://purl.obolibrary.org/obo/GO_0006954
+http://purl.obolibrary.org/obo/GO_0030324
+http://purl.obolibrary.org/obo/GO_0005578
+http://purl.obolibrary.org/obo/GO_0008285
+http://purl.obolibrary.org/obo/GO_0015629
+http://purl.obolibrary.org/obo/GO_0045087
+http://purl.obolibrary.org/obo/GO_0071456
+http://purl.obolibrary.org/obo/GO_0008083
+http://purl.obolibrary.org/obo/GO_0002576
+http://purl.obolibrary.org/obo/GO_0009611
+http://purl.obolibrary.org/obo/GO_0045944
+http://purl.obolibrary.org/obo/GO_0035987
+http://purl.obolibrary.org/obo/GO_0071222
+http://purl.obolibrary.org/obo/GO_0070374
+http://purl.obolibrary.org/obo/GO_0043388
+http://purl.obolibrary.org/obo/GO_0009749
+http://purl.obolibrary.org/obo/GO_0007507
+http://purl.obolibrary.org/obo/GO_0043200
+http://purl.obolibrary.org/obo/GO_0036057
+http://purl.obolibrary.org/obo/GO_0048010
+http://purl.obolibrary.org/obo/GO_0010628
+http://purl.obolibrary.org/obo/GO_0043491
+http://purl.obolibrary.org/obo/GO_0042129
+http://purl.obolibrary.org/obo/GO_0043005
+
+
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/GO_0003674 #molecular function
 
