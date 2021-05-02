@@ -67,12 +67,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2021-05-01</dc:date>
+        <dc:date xml:lang="en">2021-05-02</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.76</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.79</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -294,9 +294,9 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000021">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000019"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000025"/>
-        <obo:IAO_0000117>An object property that represents a relation between a disease and a mRNA where the disease has the mRNA as a biomarker.</obo:IAO_0000117>
+        <obo:IAO_0000117>An object property that represents a relation between a disease and a RNA where the disease has the mRNA as a biomarker.</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">disease has mRNA biomarker</rdfs:label>
+        <rdfs:label xml:lang="en">disease has RNA biomarker</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -337,9 +337,9 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000025">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000023"/>
-        <obo:IAO_0000115>An object property that represents a relation between a mRNA of a gene and a disease where the mRNA expression of the gene is a biomarkder of the disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>An object property that represents a relation between a RNA of a gene and a disease where the mRNA expression of the gene is a biomarkder of the disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">mRNA biomarker of disease</rdfs:label>
+        <rdfs:label xml:lang="en">RNA biomarker of disease</rdfs:label>
     </owl:ObjectProperty>
     
 
