@@ -67,12 +67,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2021-05-02</dc:date>
+        <dc:date xml:lang="en">2021-05-08</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.79</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.80</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -455,6 +455,148 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>A human patient who has the disease of chronic kidney disease (CKD).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">CKD patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000450"/>
+        <rdfs:label xml:lang="en">kidney disease biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000026"/>
+        <rdfs:label xml:lang="en">CKD biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000026"/>
+        <rdfs:label xml:lang="en">AKI biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000119>A biomarker as an indicator of a kidney cell type.</obo:IAO_0000119>
+        <obo:IAO_0000119>Yingtong Liu, Oliver He</obo:IAO_0000119>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/33197228/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">kidney cell marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000030">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">kidney podocyte marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000029"/>
+        <rdfs:label xml:lang="en">renal corpuscle cell marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000031"/>
+        <rdfs:label xml:lang="en">kidney parietal epithelial cell marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000029"/>
+        <rdfs:label xml:lang="en">kidney tubule cell marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000033"/>
+        <rdfs:label xml:lang="en">kidney proximal tubule cell marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000033"/>
+        <rdfs:label xml:lang="en">kidney looo of Henle, thin limb cell marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000030"/>
+        <obo:IAO_0000115>A podocyte marker that indicates the podocytopathy (podocyte injury). An example of such a marker is Ezrin (http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm).</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">podocytopathy marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000030"/>
+        <obo:IAO_0000115>A podocyte marker that indicates the DDS (Denys-Drash syndrome) in podocyte. An example of such a marker is VEGF (http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm).</obo:IAO_0000115>
+        <obo:IAO_0000115>DDS podocyte marker</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Denys-Drash syndrome podocytesmarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000030"/>
+        <obo:IAO_0000115>A podocyte marker that indicates the podocyte maturity. An example of such a marker is Vimentin (http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm).</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">podocyte maturation marker</rdfs:label>
     </owl:Class>
     
 
