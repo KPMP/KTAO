@@ -15,7 +15,6 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_0000001clogg.owl" uri="imports/ontorat_CL_OGG.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="DOID_import.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1620488119153" name="http://purl.obolibrary.org/obo/ontorat_googg_dis.owl" uri="imports/ontorat_GO_OGG_disease.owl"/>
         <uri id="Automatically generated entry, Timestamp=1620594887939" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao-merged.owl"/>
         <uri id="Automatically generated entry, Timestamp=1620594887939" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao.owl"/>
         <uri id="Automatically generated entry, Timestamp=1620594887939" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="imports/CL_import.owl"/>
