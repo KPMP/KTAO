@@ -67,12 +67,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2021-05-08</dc:date>
+        <dc:date xml:lang="en">2021-05-11</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.80</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.89</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -462,6 +462,7 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000039"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000450"/>
         <rdfs:label xml:lang="en">kidney disease biomarker</rdfs:label>
     </owl:Class>
@@ -489,11 +490,12 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
-        <obo:IAO_0000119>A biomarker as an indicator of a kidney cell type.</obo:IAO_0000119>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000039"/>
+        <obo:IAO_0000118>kidney cell type biomarker</obo:IAO_0000118>
+        <obo:IAO_0000119>A biomarker as an indicator of a kidney cell lineage or cell type.</obo:IAO_0000119>
         <obo:IAO_0000119>Yingtong Liu, Oliver He</obo:IAO_0000119>
         <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/33197228/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">kidney cell marker</rdfs:label>
+        <rdfs:label xml:lang="en">kidney cell lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -514,7 +516,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">kidney podocyte marker</rdfs:label>
+        <rdfs:label xml:lang="en">kidney podocyte lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -523,7 +525,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000029"/>
-        <rdfs:label xml:lang="en">renal corpuscle cell marker</rdfs:label>
+        <rdfs:label xml:lang="en">renal corpuscle cell lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -532,7 +534,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000031"/>
-        <rdfs:label xml:lang="en">kidney parietal epithelial cell marker</rdfs:label>
+        <rdfs:label xml:lang="en">kidney parietal epithelial cell lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -541,7 +543,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000029"/>
-        <rdfs:label xml:lang="en">kidney tubule cell marker</rdfs:label>
+        <rdfs:label xml:lang="en">kidney tubule cell lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -550,7 +552,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000033"/>
-        <rdfs:label xml:lang="en">kidney proximal tubule cell marker</rdfs:label>
+        <rdfs:label xml:lang="en">kidney proximal tubule cell lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -559,7 +561,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000033"/>
-        <rdfs:label xml:lang="en">kidney looo of Henle, thin limb cell marker</rdfs:label>
+        <rdfs:label xml:lang="en">kidney looo of Henle, thin limb cell lineage marker</rdfs:label>
     </owl:Class>
     
 
@@ -584,7 +586,7 @@
         <obo:IAO_0000115>DDS podocyte marker</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Denys-Drash syndrome podocytesmarker</rdfs:label>
+        <rdfs:label xml:lang="en">Denys-Drash syndrome podocyte marker</rdfs:label>
     </owl:Class>
     
 
@@ -597,6 +599,101 @@
         <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.antibodybeyond.com/reviews/cell-markers/podocyte-marker.htm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">podocyte maturation marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000445"/>
+        <obo:IAO_0000117>Oliver He, Yingtong Liu</obo:IAO_0000117>
+        <obo:IAO_0000118>kidney-associated biomarker</obo:IAO_0000118>
+        <obo:IAO_0000119>A biomarker that is an indicative of a specific biological state or identity associated with kidney</obo:IAO_0000119>
+        <obo:IAO_0000119>https://emedicine.medscape.com/article/1925619-overview</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.news-medical.net/life-sciences/What-are-Kidney-Biomarkers.aspx</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">kidney biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000027"/>
+        <rdfs:label xml:lang="en">predictive CKD biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000027"/>
+        <rdfs:label xml:lang="en">diagnostic CKD biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000027"/>
+        <rdfs:label xml:lang="en">prognostic CKD biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000028"/>
+        <rdfs:label xml:lang="en">prognostic AKI biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000028"/>
+        <rdfs:label xml:lang="en">diagnostic AKI biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000028"/>
+        <rdfs:label xml:lang="en">predictive AKI biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000027"/>
+        <rdfs:label xml:lang="en">CKD protein biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000027"/>
+        <rdfs:label xml:lang="en">CKD RNA biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000027"/>
+        <rdfs:label xml:lang="en">CKD gene marker</rdfs:label>
     </owl:Class>
     
 
