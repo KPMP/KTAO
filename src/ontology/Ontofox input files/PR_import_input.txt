@@ -2,18 +2,54 @@
 
 
 [Source ontology]
-
+PR
 
 [Low level source term URIs]
-
+http://purl.obolibrary.org/obo/PR_O60500
+http://purl.obolibrary.org/obo/PR_P00738
+http://purl.obolibrary.org/obo/PR_P01019
+http://purl.obolibrary.org/obo/PR_P01034
+http://purl.obolibrary.org/obo/PR_P01133
+http://purl.obolibrary.org/obo/PR_P01241
+http://purl.obolibrary.org/obo/PR_P01375
+http://purl.obolibrary.org/obo/PR_P01579
+http://purl.obolibrary.org/obo/PR_P02462
+http://purl.obolibrary.org/obo/PR_P02753
+http://purl.obolibrary.org/obo/PR_P02760
+http://purl.obolibrary.org/obo/PR_P02778
+http://purl.obolibrary.org/obo/PR_P02787
+http://purl.obolibrary.org/obo/PR_P04275
+http://purl.obolibrary.org/obo/PR_P05019
+http://purl.obolibrary.org/obo/PR_P05231
+http://purl.obolibrary.org/obo/PR_P07148
+http://purl.obolibrary.org/obo/PR_P07911
+http://purl.obolibrary.org/obo/PR_P08253
+http://purl.obolibrary.org/obo/PR_P09237
+http://purl.obolibrary.org/obo/PR_P10145
+http://purl.obolibrary.org/obo/PR_P13500
+http://purl.obolibrary.org/obo/PR_P15692
+http://purl.obolibrary.org/obo/PR_P16860
+http://purl.obolibrary.org/obo/PR_P19320
+http://purl.obolibrary.org/obo/PR_P19438
+http://purl.obolibrary.org/obo/PR_P20333
+http://purl.obolibrary.org/obo/PR_P22301
+http://purl.obolibrary.org/obo/PR_P28799
+http://purl.obolibrary.org/obo/PR_P29279
+http://purl.obolibrary.org/obo/PR_P54802
+http://purl.obolibrary.org/obo/PR_P80188
+http://purl.obolibrary.org/obo/PR_Q15848
+http://purl.obolibrary.org/obo/PR_Q16665
+http://purl.obolibrary.org/obo/PR_Q96D42
+http://purl.obolibrary.org/obo/PR_Q9GZV9
+http://purl.obolibrary.org/obo/PR_Q9UEF7
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://purl.obolibrary.org/obo/PR_000000001
 
 [Source term retrieval setting]
-
+includeComputedIntermediates
 
 [Source annotation URIs]
-
+includeAllAxiomsRecursively
 
 [Source annotation URIs to be excluded]
