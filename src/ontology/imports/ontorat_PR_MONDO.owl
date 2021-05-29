@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ontorat_prmondo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ontorat_prmondo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ontorat_prmondo.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_O60500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_O60500">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P00738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P00738">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P01019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P01019">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P01034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P01034">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P01133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P01133">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P01241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P01241">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P01375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P01375">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P01579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P01579">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P02462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P02462">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P02753 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P02753">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P02760 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P02760">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P02778 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P02778">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P02787 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P02787">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P04275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P04275">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P05019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P05019">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P05231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P05231">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P07148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P07148">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P07911 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P07911">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P08253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P08253">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P09237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P09237">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P10145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P10145">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P13500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P13500">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P15692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P15692">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P16860 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P16860">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P19320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P19320">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P19438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P19438">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P20333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P20333">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P22301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P22301">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P28799 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P28799">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P29279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P29279">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P54802 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P54802">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_P80188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P80188">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q15848 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q15848">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q16665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q16665">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q96D42 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q96D42">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q9GZV9 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q9GZV9">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q9UEF7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q9UEF7">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+
