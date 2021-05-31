@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ktao/PR_import.owl" uri="imports/PR_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_prmondo.owl" uri="imports/ontorat_PR_MONDO.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_mondopr.owl" uri="imports/ontorat_MONDO_PR.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="imports/ontorat_MONDO_PR.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/vo/external/PR_import.owl" uri="imports/PR_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="imports/ontorat_PR_MONDO.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="imports/ontorat_MONDO_PR.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_oggmonpro.owl" uri="imports/ontorat_OGG_MONDO_protein.owl"/>
@@ -21,36 +21,37 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontorat_0000001clogg.owl" uri="imports/ontorat_CL_OGG.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="DOID_import.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao-merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="imports/CL_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="imports/DOID_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/GO_import.owl" uri="imports/GO_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/HP_import.owl" uri="imports/HP_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/ktao/MONDO_import.owl" uri="imports/MONDO_import-v2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/ktao/MONDO_import.owl" uri="imports/MONDO_import-v3.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/ktao/MONDO_import.owl" uri="imports/MONDO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/NDFRT_import.owl" uri="imports/NDFRT_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/OAE_import.owl" uri="imports/OAE_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/OBI_import.owl" uri="imports/OBI_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/OGG_import.owl" uri="imports/OGG_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl" uri="imports/UBERON_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ktao/VO_import.owl" uri="imports/VO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="imports/ontorat_MONDO_PR.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="duplicate:http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="imports/ontorat_PR_MONDO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_0000001GOOGGCLMF.owl" uri="Ontofox%20input%20files/ontorat_GO_OGG_CC_MF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_0000001OGGGOCLMF.owl" uri="Ontofox%20input%20files/ontorat_OGG_GO_CC_MF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_0000001clogg.owl" uri="imports/ontorat_CL_OGG.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_0000001oggcl.owl" uri="imports/ontorat_OGG_CL.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_googg_BPMF.owl" uri="imports/ontorat_GO_OGG_BPMF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_googg_CC.owl" uri="imports/ontorat_GO_OGG_CC.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_googg_dis_BPMF.owl" uri="imports/ontorat_GO_OGG_disease_BPMF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_googg_dis_CC.owl" uri="imports/ontorat_GO_OGG_disease_CC.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_mondo_ogg_rna.owl" uri="imports/ontorat_MONDO_OGG_RNA.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_ogg_mondo.owl" uri="imports/ontorat_OGG_MONDO_RNA.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_ogggo_BPMF.owl" uri="imports/ontorat_OGG_GO_BPMF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_ogggo_CC.owl" uri="imports/ontorat_OGG_GO_CC.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_ogggo_dis_BPMF.owl" uri="imports/ontorat_OGG_GO_disease_BPMF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1621822047455" name="http://purl.obolibrary.org/obo/ontorat_ogggo_dis_CC.owl" uri="imports/ontorat_OGG_GO_disease_CC.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao-merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="duplicate:http://purl.obolibrary.org/obo/kao.owl" uri="ktao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/CL_import.owl" uri="imports/CL_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/DOID_import.owl" uri="imports/DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/GO_import.owl" uri="imports/GO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/HP_import.owl" uri="imports/HP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="duplicate:http://purl.obolibrary.org/obo/ktao/MONDO_import.owl" uri="imports/MONDO_import-v2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="duplicate:http://purl.obolibrary.org/obo/ktao/MONDO_import.owl" uri="imports/MONDO_import-v3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="duplicate:http://purl.obolibrary.org/obo/ktao/MONDO_import.owl" uri="imports/MONDO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/NDFRT_import.owl" uri="imports/NDFRT_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/OAE_import.owl" uri="imports/OAE_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/OBI_import.owl" uri="imports/OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/OGG_import.owl" uri="imports/OGG_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/PR_import.owl" uri="imports/PR_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl" uri="imports/UBERON_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ktao/VO_import.owl" uri="imports/VO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_0000001GOOGGCLMF.owl" uri="Ontofox%20input%20files/ontorat_GO_OGG_CC_MF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_0000001OGGGOCLMF.owl" uri="Ontofox%20input%20files/ontorat_OGG_GO_CC_MF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_0000001clogg.owl" uri="imports/ontorat_CL_OGG.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_0000001oggcl.owl" uri="imports/ontorat_OGG_CL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_googg_BPMF.owl" uri="imports/ontorat_GO_OGG_BPMF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_googg_CC.owl" uri="imports/ontorat_GO_OGG_CC.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_googg_dis_BPMF.owl" uri="imports/ontorat_GO_OGG_disease_BPMF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_googg_dis_CC.owl" uri="imports/ontorat_GO_OGG_disease_CC.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_mondo_ogg_rna.owl" uri="imports/ontorat_MONDO_OGG_RNA.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_mondopr.owl" uri="imports/ontorat_MONDO_PR.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_ogg_mondo.owl" uri="imports/ontorat_OGG_MONDO_RNA.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_ogggo_BPMF.owl" uri="imports/ontorat_OGG_GO_BPMF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_ogggo_CC.owl" uri="imports/ontorat_OGG_GO_CC.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_ogggo_dis_BPMF.owl" uri="imports/ontorat_OGG_GO_disease_BPMF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_ogggo_dis_CC.owl" uri="imports/ontorat_OGG_GO_disease_CC.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1622490582093" name="http://purl.obolibrary.org/obo/ontorat_prmondo.owl" uri="imports/ontorat_PR_MONDO.owl"/>
     </group>
 </catalog>
