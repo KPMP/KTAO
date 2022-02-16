@@ -40,7 +40,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ontorat_prmondo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/CL_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/DOID_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/GO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/MONDO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/NDFRT_import.owl"/>
@@ -48,7 +47,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OBI_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/OGG_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/PR_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/UBERON_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ktao/VO_import.owl"/>
         <dc:contributor xml:lang="en">Becky Steck</dc:contributor>
         <dc:contributor>Chrysta Lienczewski</dc:contributor>
@@ -70,12 +68,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2021-05-31</dc:date>
+        <dc:date xml:lang="en">2022-02-16</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.96</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.101</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -423,6 +421,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CP_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ExO_0000002 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ExO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
     
 
 
@@ -958,11 +964,37 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000104 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004196"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004197"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_3010394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_3010394"/>
     
 
 
