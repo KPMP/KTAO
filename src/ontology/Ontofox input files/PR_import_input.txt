@@ -43,6 +43,39 @@ http://purl.obolibrary.org/obo/PR_Q96D42
 http://purl.obolibrary.org/obo/PR_Q9GZV9
 http://purl.obolibrary.org/obo/PR_Q9UEF7
 
+# AKI biomarkers, annotated by Lia
+http://purl.obolibrary.org/obo/PR_000001376
+http://purl.obolibrary.org/obo/PR_000007309
+http://purl.obolibrary.org/obo/PR_000004604
+http://purl.obolibrary.org/obo/PR_000008453
+http://purl.obolibrary.org/obo/PR_000022001
+http://purl.obolibrary.org/obo/PR_000001224
+http://purl.obolibrary.org/obo/PR_000015214
+http://purl.obolibrary.org/obo/PR_000016353
+http://purl.obolibrary.org/obo/PR_000008953
+http://purl.obolibrary.org/obo/PR_000013825
+http://purl.obolibrary.org/obo/PR_000009741
+http://purl.obolibrary.org/obo/PR_000033214
+http://purl.obolibrary.org/obo/PR_000024649
+http://purl.obolibrary.org/obo/PR_000014706
+http://purl.obolibrary.org/obo/PR_000001868
+http://purl.obolibrary.org/obo/PR_000001395
+http://purl.obolibrary.org/obo/PR_000001471
+http://purl.obolibrary.org/obo/PR_000010491
+http://purl.obolibrary.org/obo/PR_000001012
+http://purl.obolibrary.org/obo/PR_000006151
+http://purl.obolibrary.org/obo/PR_000001222
+http://purl.obolibrary.org/obo/PR_000010902
+http://purl.obolibrary.org/obo/PR_000016276
+http://purl.obolibrary.org/obo/PR_000019379
+http://purl.obolibrary.org/obo/PR_000004580
+http://purl.obolibrary.org/obo/PR_000019534
+http://purl.obolibrary.org/obo/PR_000014413
+http://purl.obolibrary.org/obo/PR_000003986
+http://purl.obolibrary.org/obo/PR_000013191
+http://purl.obolibrary.org/obo/PR_000018880
+
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PR_000000001
 

@@ -482,10 +482,40 @@ http://purl.obolibrary.org/obo/OGG_3000406985
 http://purl.obolibrary.org/obo/OGG_3000406988
 http://purl.obolibrary.org/obo/OGG_3000554210
 
-
+# Lia: AKI gene markers Lia added 58 total, 5/11/2021
+http://purl.obolibrary.org/obo/OGG_3000003606
+http://purl.obolibrary.org/obo/OGG_3000002168
+http://purl.obolibrary.org/obo/OGG_3000003934
+http://purl.obolibrary.org/obo/OGG_3000026762
+http://purl.obolibrary.org/obo/OGG_3000051594
+http://purl.obolibrary.org/obo/OGG_3000006696
+http://purl.obolibrary.org/obo/OGG_3000006550
+http://purl.obolibrary.org/obo/OGG_3000007077
+http://purl.obolibrary.org/obo/OGG_3000003490
+http://purl.obolibrary.org/obo/OGG_3000057794
+http://purl.obolibrary.org/obo/OGG_3000879877
+http://purl.obolibrary.org/obo/OGG_3000882262
+http://purl.obolibrary.org/obo/OGG_3000000335
+http://purl.obolibrary.org/obo/OGG_3000005345
+http://purl.obolibrary.org/obo/OGG_3000003569
+http://purl.obolibrary.org/obo/OGG_3000003576
+http://purl.obolibrary.org/obo/OGG_3000003586
+http://purl.obolibrary.org/obo/OGG_3000004318
+http://purl.obolibrary.org/obo/OGG_3000003684
+http://purl.obolibrary.org/obo/OGG_3000003491
+http://purl.obolibrary.org/obo/OGG_3000001906
+http://purl.obolibrary.org/obo/OGG_3000006347
+http://purl.obolibrary.org/obo/OGG_3000007033
+http://purl.obolibrary.org/obo/OGG_3000001191
+http://purl.obolibrary.org/obo/OGG_3000000567
+http://purl.obolibrary.org/obo/OGG_3000001471
+http://purl.obolibrary.org/obo/OGG_3000006277
+http://purl.obolibrary.org/obo/OGG_3000000259
+http://purl.obolibrary.org/obo/OGG_3000005052
+http://purl.obolibrary.org/obo/OGG_3000000049
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 
+http://purl.obolibrary.org/obo/BFO_0000040 
 
 [Source term retrieval setting]
 includeAllIntermediates

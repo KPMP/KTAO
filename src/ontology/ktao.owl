@@ -68,12 +68,12 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2022-02-16</dc:date>
+        <dc:date xml:lang="en">2022-04-12</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.101</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.102</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -329,7 +329,7 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000024 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000024">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000023"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
         <obo:IAO_0000115>An object property that represents a relation between a protein and a disease where the protein is a biomarkder of the disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">protein biomarker of disease</rdfs:label>
@@ -340,7 +340,7 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000025 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000025">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000023"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
         <obo:IAO_0000115>An object property that represents a relation between a RNA of a gene and a disease where the mRNA expression of the gene is a biomarkder of the disease.</obo:IAO_0000115>
         <obo:IAO_0000117>Yingtong Liu, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">RNA biomarker of disease</rdfs:label>
@@ -510,7 +510,19 @@
     <!-- http://purl.obolibrary.org/obo/KTAO_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000028">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002492"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002492"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">AKI biomarker</rdfs:label>
     </owl:Class>
     
@@ -960,6 +972,20 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000057794 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000057794">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002492"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2742480/</obo:IAO_0000119>
     </rdf:Description>
     
 
