@@ -65,15 +65,16 @@
         <dc:contributor>Ulysses Balis</dc:contributor>
         <dc:creator xml:lang="en">Edison Ong</dc:creator>
         <dc:creator>Jennifer Schaub</dc:creator>
+        <dc:creator>Lia Papageorge</dc:creator>
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2022-04-12</dc:date>
+        <dc:date xml:lang="en">2022-04-13</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.102</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.108</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -365,6 +366,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/KTAO_0000053">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002330"/>
+        <rdfs:label xml:lang="en">encodes protein</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -523,6 +533,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002492"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A biomarker of the acute kidney injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Lia Papageorge, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute Kidney Injury biomarker</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2742480/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">AKI biomarker</rdfs:label>
     </owl:Class>
     
@@ -957,6 +971,25 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000009"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004197"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000026762 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_3000026762">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002492"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PR_000008453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
