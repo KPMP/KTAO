@@ -241,14 +241,6 @@
     
 
 
-    <!-- http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl# -->
-
-    <owl:ObjectProperty rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#">
-        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass -->
 
     <owl:ObjectProperty rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_ChemClass">
@@ -11700,12 +11692,6 @@
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000145961"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000135760"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#CI_with"/>
                 <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000000999"/>
             </owl:Restriction>
@@ -11773,12 +11759,6 @@
     <owl:Class rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000154189">
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000020502"/>
         <rdfs:subClassOf rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000029204"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#"/>
-                <owl:someValuesFrom rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000135721"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -12386,9 +12366,9 @@
         <NDF-RT:code>C134</NDF-RT:code>
     </rdf:Description>
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#MeSH_Definition">
+        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
         <rdfs:label>MeSH_Definition</rdfs:label>
         <NDF-RT:code>C142</NDF-RT:code>
-        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#MeSH_Name">
         <NDF-RT:code>C287</NDF-RT:code>
@@ -12402,8 +12382,8 @@
         <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
         <NDF-RT:Units>UNIT/ML</NDF-RT:Units>
         <rdfs:label>NYSTATIN 100000UNT/ML SUSP,ORAL [VA Product]</rdfs:label>
-        <NDF-RT:Display_Name>NYSTATIN 100000UNT/ML SUSP,ORAL</NDF-RT:Display_Name>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.68^897^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.68&lt;/VA_File&gt;&lt;VA_IEN&gt;897&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
+        <NDF-RT:Display_Name>NYSTATIN 100000UNT/ML SUSP,ORAL</NDF-RT:Display_Name>
         <NDF-RT:VUID>4001505</NDF-RT:VUID>
         <NDF-RT:NUI>N0000149693</NDF-RT:NUI>
         <NDF-RT:Product_Component_Qualifier>&lt;Product_Component&gt;NYSTATIN&lt;/Product_Component&gt;&lt;Strength&gt;100000&lt;/Strength&gt;&lt;Unit&gt;UNIT/ML&lt;/Unit&gt;&lt;Unit&gt;UNT/ML&lt;/Unit&gt;&lt;VA.IEN&gt;173&lt;/VA.IEN&gt;</NDF-RT:Product_Component_Qualifier>
@@ -12411,8 +12391,8 @@
         <NDF-RT:VA_National_Formulary_Name>NYSTATIN SUSP</NDF-RT:VA_National_Formulary_Name>
         <NDF-RT:RxNorm_CUI>312055</NDF-RT:RxNorm_CUI>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.68^902^Inactive&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.68&lt;/VA_File&gt;&lt;VA_IEN&gt;902&lt;/VA_IEN&gt;&lt;VA_Status&gt;Inactive&lt;/VA_Status&gt;</NDF-RT:VANDF_Record>
-        <NDF-RT:Status>Active</NDF-RT:Status>
         <NDF-RT:code>C47624</NDF-RT:code>
+        <NDF-RT:Status>Active</NDF-RT:Status>
         <NDF-RT:Print_Name>NYSTATIN 100000 UNT/ML SUSP</NDF-RT:Print_Name>
         <NDF-RT:Product_Component rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000145961"/>
     </rdf:Description>
@@ -12437,14 +12417,14 @@
         <NDF-RT:code>C39204</NDF-RT:code>
         <NDF-RT:VANDF_Record>&lt;VANDF_Record&gt;50.68^5634^&lt;/VANDF_Record&gt;&lt;VA_File&gt;50.68&lt;/VA_File&gt;&lt;VA_IEN&gt;5634&lt;/VA_IEN&gt;</NDF-RT:VANDF_Record>
         <NDF-RT:VUID>4006159</NDF-RT:VUID>
-        <NDF-RT:Product_Component rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000147000"/>
         <NDF-RT:Product_Component rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000145832"/>
+        <NDF-RT:Product_Component rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#N0000147000"/>
         <rdfs:label>DIANEAL PD-2/DEXTROSE 2.5% SOLN [VA Product]</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#NUI">
         <rdfs:label>NUI</rdfs:label>
-        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
         <NDF-RT:code>C10490107818172</NDF-RT:code>
+        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#Print_Name">
         <NDF-RT:code>C114</NDF-RT:code>
@@ -12457,8 +12437,8 @@
         <NDF-RT:code>C28035649040869</NDF-RT:code>
     </rdf:Description>
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#RxNorm_CUI">
-        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
         <rdfs:label>RxNorm_CUI</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl"/>
         <NDF-RT:code>C818</NDF-RT:code>
     </rdf:Description>
     <rdf:Description rdf:about="http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#RxNorm_Name">
