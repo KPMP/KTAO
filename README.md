@@ -12,6 +12,8 @@ Note: KTAO is developed simultaneously with the community-based [Ontology of Pre
 - Y. Oliver He
 - Edison Ong
 - Yingtong Liu
+- Ghida Arnous
+- Lia Papageorge
 - Jennifer Schaub
 - Eric Ling Wan
 - Sean Mooney
