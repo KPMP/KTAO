@@ -75,6 +75,49 @@ http://purl.obolibrary.org/obo/PR_000003986
 http://purl.obolibrary.org/obo/PR_000013191
 http://purl.obolibrary.org/obo/PR_000018880
 
+# Ghida, one AKI and 40 kidney reference biomarkers, on 4/17/2023
+http://purl.obolibrary.org/obo/PR_O60896
+http://purl.obolibrary.org/obo/PR_Q6DN14
+http://purl.obolibrary.org/obo/PR_P24468
+http://purl.obolibrary.org/obo/PR_P21757
+http://purl.obolibrary.org/obo/PR_P01591
+http://purl.obolibrary.org/obo/PR_P13647
+http://purl.obolibrary.org/obo/PR_P58304
+http://purl.obolibrary.org/obo/PR_P51674
+http://purl.obolibrary.org/obo/PR_Q92786
+http://purl.obolibrary.org/obo/PR_P49758
+http://purl.obolibrary.org/obo/PR_P21579
+http://purl.obolibrary.org/obo/PR_P41180
+http://purl.obolibrary.org/obo/PR_Q9HCK4
+http://purl.obolibrary.org/obo/PR_A0PJX2
+http://purl.obolibrary.org/obo/PR_P35348
+http://purl.obolibrary.org/obo/PR_Q9H6B4
+http://purl.obolibrary.org/obo/PR_P18283
+http://purl.obolibrary.org/obo/PR_P47736
+http://purl.obolibrary.org/obo/PR_Q8IWU6
+http://purl.obolibrary.org/obo/PR_P01911
+http://purl.obolibrary.org/obo/PR_O94788
+http://purl.obolibrary.org/obo/PR_Q9Y2I2
+http://purl.obolibrary.org/obo/PR_Q96PD6
+http://purl.obolibrary.org/obo/PR_Q8NCS7
+http://purl.obolibrary.org/obo/PR_O95156
+http://purl.obolibrary.org/obo/PR_Q8IY50
+http://purl.obolibrary.org/obo/PR_O60266
+http://purl.obolibrary.org/obo/PR_O75112
+http://purl.obolibrary.org/obo/PR_P24821
+http://purl.obolibrary.org/obo/PR_Q07092
+http://purl.obolibrary.org/obo/PR_P15509
+http://purl.obolibrary.org/obo/PR_O43272
+http://purl.obolibrary.org/obo/PR_P41134
+http://purl.obolibrary.org/obo/PR_Q8NBS3
+http://purl.obolibrary.org/obo/PR_Q9H6I2
+http://purl.obolibrary.org/obo/PR_Q68D86
+http://purl.obolibrary.org/obo/PR_O95069
+http://purl.obolibrary.org/obo/PR_P20908
+http://purl.obolibrary.org/obo/PR_P16870
+http://purl.obolibrary.org/obo/PR_Q99250
+http://purl.obolibrary.org/obo/PR_Q99581
+
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PR_000000001

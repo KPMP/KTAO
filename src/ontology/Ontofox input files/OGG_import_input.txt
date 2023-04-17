@@ -514,6 +514,51 @@ http://purl.obolibrary.org/obo/OGG_3000000259
 http://purl.obolibrary.org/obo/OGG_3000005052
 http://purl.obolibrary.org/obo/OGG_3000000049
 
+# Ghida: one AKI and 40 kidney reference gene markers, 4/17/2023
+
+http://purl.obolibrary.org/obo/OGG_3000010268
+http://purl.obolibrary.org/obo/OGG_3000079772
+http://purl.obolibrary.org/obo/OGG_3000007026
+http://purl.obolibrary.org/obo/OGG_3000004481
+http://purl.obolibrary.org/obo/OGG_3000256369
+http://purl.obolibrary.org/obo/OGG_3000003852
+http://purl.obolibrary.org/obo/OGG_3000338917
+http://purl.obolibrary.org/obo/OGG_3000002823
+http://purl.obolibrary.org/obo/OGG_3000005629
+http://purl.obolibrary.org/obo/OGG_3000009628
+http://purl.obolibrary.org/obo/OGG_3000006857
+http://purl.obolibrary.org/obo/OGG_3000000846
+http://purl.obolibrary.org/obo/OGG_3000006092
+http://purl.obolibrary.org/obo/OGG_3000140711
+http://purl.obolibrary.org/obo/OGG_3000000148
+http://purl.obolibrary.org/obo/OGG_3000079827
+http://purl.obolibrary.org/obo/OGG_3000002877
+http://purl.obolibrary.org/obo/OGG_3000005909
+http://purl.obolibrary.org/obo/OGG_3000023213
+http://purl.obolibrary.org/obo/OGG_3000003123
+http://purl.obolibrary.org/obo/OGG_3000008854
+http://purl.obolibrary.org/obo/OGG_3000022854
+http://purl.obolibrary.org/obo/OGG_3000116255
+http://purl.obolibrary.org/obo/OGG_3000204962
+http://purl.obolibrary.org/obo/OGG_3000011249
+http://purl.obolibrary.org/obo/OGG_3000148641
+http://purl.obolibrary.org/obo/OGG_3000000109
+http://purl.obolibrary.org/obo/OGG_3000011155
+http://purl.obolibrary.org/obo/OGG_3000003371
+http://purl.obolibrary.org/obo/OGG_3000001307
+http://purl.obolibrary.org/obo/OGG_3000001438
+http://purl.obolibrary.org/obo/OGG_3000058510
+http://purl.obolibrary.org/obo/OGG_3000003397
+http://purl.obolibrary.org/obo/OGG_3000083959
+http://purl.obolibrary.org/obo/OGG_3000064321
+http://purl.obolibrary.org/obo/OGG_3000079839
+http://purl.obolibrary.org/obo/OGG_3000003776
+http://purl.obolibrary.org/obo/OGG_3000001289
+http://purl.obolibrary.org/obo/OGG_3000001363
+http://purl.obolibrary.org/obo/OGG_3000006326
+http://purl.obolibrary.org/obo/OGG_3000054738
+
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 
 
@@ -524,3 +569,4 @@ includeAllIntermediates
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
+
