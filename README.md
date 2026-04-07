@@ -39,7 +39,7 @@ Note that the source ontology is an OWL file.
 
 # Ontology-supported Kidney Research Dictionary:
 
-* https://github.com/KPMP/KPMP-dictionary/blob/master/README.md
+* https://github.com/KPMP/KPMP-dictionary 
 
 # Publications
 
