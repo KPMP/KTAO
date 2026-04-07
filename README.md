@@ -37,6 +37,10 @@ Note that the source ontology is an OWL file.
 * In BioPortal: [https://bioportal.bioontology.org/ontologies/KTAO](https://bioportal.bioontology.org/ontologies/KTAO)
 * In Ontobee: [http://www.ontobee.org/ontology/KTAO](http://www.ontobee.org/ontology/KTAO)
 
+# Ontology-supported Kidney Research Dictionary:
+
+* https://github.com/KPMP/KPMP-dictionary/blob/master/README.md
+
 # Publications
 
 * He YO, Barisoni L, Rosenberg AZ, Robinson P, Diehl AD, Chen Y, Phuong J, Hansen J, Herr Ii BW, Börner K, Schaub J, Bonevich N, Arnous G, Boddapati S, Zheng J, Alakwaa F, Sardar P, Duncan WD, Liang C, Valerius MT, Jain S, Iyengar R, Himmelfarb J, Kretzler M; Kidney Precision Medicine Project. Ontology-based modeling, integration, and analysis of heterogeneous clinical, pathological, and molecular kidney data for precision medicine. _AMIA Annu Symp Proc_. 2025 May 22:2024:523-532. eCollection 2024. PMID: [40417545](https://pubmed.ncbi.nlm.nih.gov/40417545/). PMCID: [PMC12099421](https://pmc.ncbi.nlm.nih.gov/articles/PMC12099421/).  (_note_: this talk in AMIA 2024 was awarded as one Best Presentation Award.)
