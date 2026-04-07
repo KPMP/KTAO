@@ -20,9 +20,10 @@ Note: KTAO is developed simultaneously with the community-based [Ontology of Pre
 - Eric Ling Wan
 - Sean Mooney
 - Becky Steck
-- Michael Todd Valerius 
-- Contributors: George Oliver, Matthias Kretzler, Chrysta Lienczewski, Deborah Hoshizaki, Evren Azeloglu, John F. Bertram, Jonathan Himmelfarb, Laura Mariani, Ravi Iyengar, Ulysses Balis, John O'Toole 
-- The KPMP Consortium
+- Michael Todd Valerius
+
+  
+**Contributors**: George Oliver, Matthias Kretzler, Chrysta Lienczewski, Deborah Hoshizaki, Evren Azeloglu, John F. Bertram, Jonathan Himmelfarb, Laura Mariani, Ravi Iyengar, Ulysses Balis, John O'Toole, and The KPMP Consortium. 
 
 # Download
 
