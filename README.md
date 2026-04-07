@@ -39,7 +39,11 @@ Note that the source ontology is an OWL file.
 
 # Ontology-supported Kidney Dictionary:
 
-* https://github.com/KPMP/KPMP-dictionary 
+* https://github.com/KPMP/KPMP-dictionary
+
+# KPMP ontology team supporting community ontologies:
+
+* HPO: We contributed [>300 kidney related terms to HPO](https://github.com/obophenotype/human-phenotype-ontology/issues?q=is%3Aissue%20state%3Aclosed%20label%3AKPMP%2FKidney).
 
 # Publications
 
