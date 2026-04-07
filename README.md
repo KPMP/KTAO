@@ -37,7 +37,7 @@ Note that the source ontology is an OWL file.
 * In BioPortal: [https://bioportal.bioontology.org/ontologies/KTAO](https://bioportal.bioontology.org/ontologies/KTAO)
 * In Ontobee: [http://www.ontobee.org/ontology/KTAO](http://www.ontobee.org/ontology/KTAO)
 
-# Ontology-supported Kidney Research Dictionary:
+# Ontology-supported Kidney Dictionary:
 
 * https://github.com/KPMP/KPMP-dictionary 
 
