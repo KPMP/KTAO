@@ -3,7 +3,7 @@ The Kidney Tissue Atlas Ontology (KTAO) is an ontology that integrates kidney-re
 
 KTAO is developed to support the NIH-NIDDK-funed Kidney Precision Medicine Project (KPMP, [http://kpmp.org](http://kpmp.org)). The KTAO development is also supported by the KPMP project. 
 
-[This GitHub website](https://github.com/KPMP/KTAO) is the home page of KTAO. 
+This website (https://github.com/KPMP/KTAO) is the home page of the KTAO ontology in GitHub. 
 
 Note: KTAO is developed simultaneously with the community-based [Ontology of Precision Medicine and Investigation (OPMI)] (https://github.com/OPMI/opmi). KTAO and OPMI are complementary with each other. OPMI includes many precision medicine-related terms that are general and can be used in KTAO and beyond KTAO. KTAO is developed with more kidney-specific information. To support kidney-specific KPMP tasks, KTAO also imports related terms from OPMI.  
 
