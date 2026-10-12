@@ -830,6 +830,51 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">cell cluster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label xml:lang="en">PT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000061"/>
+        <rdfs:label xml:lang="en">PT1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000062"/>
+        <rdfs:label xml:lang="en">aPT1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label xml:lang="en">P_1 proximal nephron cell</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MAXO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MAXO_0000003">
