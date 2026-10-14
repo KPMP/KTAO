@@ -73,12 +73,15 @@
         <dc:creator xml:lang="en">Ling Wan</dc:creator>
         <dc:creator>Yingtong Liu</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:date xml:lang="en">2026-05-20</dc:date>
+        <dc:creator>Jens Hansen</dc:creator>
+        <dc:creator>Jie Zheng</dc:creator>
+        <dc:creator>Ravi Iyengar</dc:creator>
+        <dc:date xml:lang="en">2026-10-14</dc:date>
         <dc:description xml:lang="en">KTAO (Kidney Tissue Atlas Ontology) is a community-based biomedical ontology. Its development is supported by the NIH-NIDDK supported Kidney Precision Medicine Project (KPMP).</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">KTAO: A biomedical ontology that represents kidney tissue atlas.</dc:subject>
         <dc:title xml:lang="en">KTAO: Kidney Tissue Atlas Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.131</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.134</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -871,6 +874,36 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
         <rdfs:label xml:lang="en">P_1 proximal nephron cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000056"/>
+        <obo:IAO_0000117>Oliver He, Jens Hansen, Ravi Iyengar, Jie Zheng</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">adaptive epithelial kidney cell state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000056"/>
+        <obo:IAO_0000117>Oliver He, Jens Hansen, Ravi Iyengar, Jie Zheng</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">adaptive stromal kidney cell state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/KTAO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/KTAO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/KTAO_0000056"/>
+        <obo:IAO_0000117>Oliver He, Jens Hansen, Ravi Iyengar, Jie Zheng</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">adaptive endothelial kidney cell state</rdfs:label>
     </owl:Class>
     
 
